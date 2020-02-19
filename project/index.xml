@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Adam Hearn</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://achearn.com/project/</link>
+      <atom:link href="https://achearn.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://achearn.com/img/icon-192.png</url>
       <title>Projects</title>
-      <link>/project/</link>
+      <link>https://achearn.com/project/</link>
     </image>
     
     <item>
       <title>Using NCAA Track Data as a Predictor for Race Times</title>
-      <link>/project/tfrrs/</link>
+      <link>https://achearn.com/project/tfrrs/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/tfrrs/</guid>
+      <guid>https://achearn.com/project/tfrrs/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -84,6 +84,60 @@ displayed in Table 1.&lt;/p&gt;
 &lt;tr&gt;
 &lt;th&gt;NCAA Division&lt;/th&gt;
 &lt;th&gt;100m&lt;/th&gt;
+&lt;th&gt;200m&lt;/th&gt;
+&lt;th&gt;400m&lt;/th&gt;
+&lt;th&gt;800m&lt;/th&gt;
+&lt;th&gt;1500m&lt;/th&gt;
+&lt;th&gt;3000m Steeple&lt;/th&gt;
+&lt;th&gt;5000m&lt;/th&gt;
+&lt;th&gt;10000m&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Division I&lt;/td&gt;
+&lt;td&gt;11.33&lt;/td&gt;
+&lt;td&gt;22.39&lt;/td&gt;
+&lt;td&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td&gt;04:09.4&lt;/td&gt;
+&lt;td&gt;9:34.7&lt;/td&gt;
+&lt;td&gt;15:14.41&lt;/td&gt;
+&lt;td&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Division II&lt;/td&gt;
+&lt;td&gt;11.45&lt;/td&gt;
+&lt;td&gt;22.39&lt;/td&gt;
+&lt;td&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td&gt;04:09.4&lt;/td&gt;
+&lt;td&gt;9:34.7&lt;/td&gt;
+&lt;td&gt;15:14.41&lt;/td&gt;
+&lt;td&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Division III&lt;/td&gt;
+&lt;td&gt;11.79&lt;/td&gt;
+&lt;td&gt;23.92&lt;/td&gt;
+&lt;td&gt;53.44&lt;/td&gt;
+&lt;td&gt;02:05.9&lt;/td&gt;
+&lt;td&gt;04:44.7&lt;/td&gt;
+&lt;td&gt;10:22.7&lt;/td&gt;
+&lt;td&gt;16:21.6&lt;/td&gt;
+&lt;td&gt;34:03.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NCAA Division&lt;/th&gt;
+&lt;th&gt;100m&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;200m&lt;/th&gt;
 &lt;th align=&#34;right&#34;&gt;400m&lt;/th&gt;
 &lt;th&gt;800m&lt;/th&gt;
@@ -137,9 +191,9 @@ displayed in Table 1.&lt;/p&gt;
 &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| _______ | ______ | ___________ |
 |     Division I  11.33 |  22.39  | 50.51 |  01:57.5   04:09.4      09:34.7      15.14.41   31:29.5 |
 |        n=44,700  (0.9) |  (1.1)   | (2.7) |   (6.0)    (22.2)       (34.5)        (50.3)    (102.3) |
-|     Division II  11.45  | 23.16  | 52.08 |  02:02.6   04:20.2      10:07.1      15:59.7    33:21.7 |
+|     Division II  11.45  | 23.16  | 52.08 |  02:02.6 |  04:20.2    |  10:07.1  |    15:59.7 |   33:21.7 |
 |        n=24,308  (0.6)  | (1.3) |  (3.0)  |  (8.0)    (22.7)       (46.5)        (61.8)    (135.6) |
-|    Division III  11.79  | 23.92  | 53.44 |  02:05.9   04:44.7      10:22.7      16:21.6    34:03.5 |
+|    Division III  11.79  | 23.92  | 53.44 |  02:05.9 |  04:44.7   |   10:22.7   |   16:21.6   | 34:03.5 |
 |        n=44,735  (0.8)  | (1.5) |  (3.3)  |  (9.2)    (21.4)       (45.6)        (65.9)    (139.3) |&lt;/p&gt;
 
 &lt;p&gt;Average times by NCAA Division
@@ -686,6 +740,23 @@ www.fetcheveryone.com/marathonprediction.&lt;/p&gt;
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>https://achearn.com/project/sensem/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://achearn.com/project/sensem/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
     </item>
     
