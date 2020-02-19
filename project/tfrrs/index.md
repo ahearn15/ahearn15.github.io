@@ -1,0 +1,656 @@
+---
+title: Using NCAA Track Data as a Predictor for Race Times
+summary: NCAA Track & Field results can be mined to create an ecosystem of robust running data.
+tags:
+- Running
+date: "2019-11-22T00:00:00Z"
+
+header-includes:
+  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+image:
+  caption: Photo by Jamie Schwaberow on NCAA Photos
+  focal_point: Smart
+
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/ahearn15
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
+
+## Introduction
+Prior to the invention of the internet and television, collegiate athletic results were more of a guessing game. Coaches would be in contact with one another via letter mail, a rather antiquated system by today’s standards. According to the Rhodes College Track \& Field Head Coach, Robert Shankman, coaches would create “pacts” with one another promising to send their results to each other after every competition. However, with this came various reporting errors such as “sandbagging” in results (i.e. reporting one's time as faster or slower than it actually is), or failure to send results altogether. Furthermore, school records and qualifications for NCAA Championships were dependent upon these marks, yet coaches and athletes may not have submitted these marks with honesty and integrity: a key violation of the NCAA Code of Ethics. 
+
+It was not until 2010 that the invention of the Track \& Field Results Reporting System, more colloquially known as TFRRS, came along. TFRRS (pronounced TEE-furs) is a website mandated by the NCAA to be the hub of all collegiate track \& field results and rankings. Each collegiate meet director must submit their results to this website at the conclusion of their event. As a result, this website is a robust database of all things track \& field, including every athlete, event, and meet held since 2012. 
+
+## Data Collection Methods
+Co-authors and teammates, Adam Hearn and Will Raines, track \& field athletes for Rhodes College, are active users of this website. Whether they are checking their most recent times and rankings or stalking their competition for their next meet, they find themselves on this website multiple times a day. When looking at the centralized nature of the data, Adam realized he could easily mine this data into a format to be read by statistical packages. Once mined, the dataset culminated into one with over 225,000 observations, including every NCAA Division I, II, and III athlete, male and female, who has ever participated in a track event since 2012. The events that we have included in our dataset are the 100 meter dash, 200 meter dash, 400 meter dash, 800 meter run, 1500 meter run, 3000 meter Steeplechase, 5000 meter run, and 10000 meter run. 
+
+To collect this data, the statistical package Stata was used to convert and clean over 400 .hmtl tables to .csv format, by stripping html tags, merging athletes, and converting time from a string value in HH:MM:SS.mm format to a float value of time in seconds. These methods were chosen specifically to optimize both numeric and qualitative analyses of these results. For each year, after each event was converted into its own comma delimited file, that file would be merged with every other event so that each athlete's times for that season are in its own observation. The pseudocode is presented in Algorithm 1.
+
+```
+seasons = range(2012, 2019)
+events = (100, 200, 400, 800, 1500, 3000, 5000, 10000)
+genders = (male, female)
+divisions = (1, 2, 3)
+
+i = 0
+x = 0
+foreach season in seasons:
+  foreach event in events:
+    foreach gender in genders:
+      foreach division in division:
+        goto website, copy as txt
+        save as season_event_gender_division.txt
+        strip .html tags
+        convert eventTime (str) to float
+        save as event[i].dta
+        i++
+Merge athlete to athlete
+while x < i:
+  append event[x].dta
+  x++
+```
+After this nested loop was run, each season was appended below the
+previous to culminate into a master dataset of over 225,000
+observations. A sample observation includes: the individual's name,
+their school, their gender, their NCAA division, and their season-best
+times and percentile for each event they ran. There are several missing
+values, as it is unlikely that an individual ran the 100m, 200m, 400m,
+800m, 1500m, 3000m Steeplechase, 5000m, and 10000m meter races all in
+the same year (in fact, there are only three individuals in this entire
+dataset that have done so). Track & field runners often specialize in
+one, two, or three events, so the typical athlete will have several
+missing values in their observation. Additionally, the athletes in this
+dataset are tracked longitudinally. If an athlete competes all four
+years of their eligibility, they will have four observations present in
+this dataset--one for each year of competition.
+
+Inside the Data
+===============
+
+Before we take a look at the algorithms and techniques we used to
+analyze the data, we decided it would help to the non-track & field
+trained eye to take a look at summary statistics for each event, by
+breaking up the data between NCAA division and gender: the two nominal
+attributes we hope to uncover trends within. Statistics on average
+times, standard deviation, and participation by division and gender are
+displayed in Table 1.
+
+| NCAA Division | 100m  | 200m  | 400m  | 800m    | 1500m   | 3000m Steeple | 5000m    | 10000m  |
+| ------------- | ----- | ----- | ----- | ------- | ------- | ------------- | -------- | ------- |
+| Division I    | 11.33 | 22.39 | 50.51 | 1:57.5  | 04:09.4 | 9:34.7        | 15:14.41 | 31.29.5 |
+| Division II   | 11.45 | 22.39 | 50.51 | 1:57.5  | 04:09.4 | 9:34.7        | 15:14.41 | 31.29.5 |
+| Division III  | 11.79 | 23.92 | 53.44 | 02:05.9 | 04:44.7 | 10:22.7       | 16:21.6  | 34:03.5 |
+
+NCAA Division      | 100m      | 200m      | 400m      | 800m    | 1500m     | 3000m Steeple  | 5000m     | 10000m |
+| ------------- | ---------   |:---------:| ---------:| --------|:---------:| --------------:| ---------:| -----:|
+| Division I  | 11.33 (0.9) | 22.39     | 50.51     | 1:57.5  | 04:09.4   | 9:34.7         | 15:14.41  | 31.29.5
+| Division II  | 11.45 (0.6)     | 22.39     | 50.51     | 1:57.5  | 04:09.4   | 9:34.7         | 15:14.41  | 31.29.5
+| Division III  | 11.33     | 22.39     | 50.51     | 1:57.5  | 04:09.4   | 9:34.7         | 15:14.41  | 31.29.5
+
+
+
+|                  100m  |  200m  |  400m  |   800m      1500m    3000m Steeple    5000m     10000m |
+------------------------| _______ | ______ | ___________ |
+|     Division I  11.33 |  22.39  | 50.51 |  01:57.5   04:09.4      09:34.7      15.14.41   31:29.5 |
+|        n=44,700  (0.9) |  (1.1)   | (2.7) |   (6.0)    (22.2)       (34.5)        (50.3)    (102.3) |
+|     Division II  11.45  | 23.16  | 52.08 |  02:02.6 |  04:20.2    |  10:07.1  |    15:59.7 |   33:21.7 |
+|        n=24,308  (0.6)  | (1.3) |  (3.0)  |  (8.0)    (22.7)       (46.5)        (61.8)    (135.6) |
+|    Division III  11.79  | 23.92  | 53.44 |  02:05.9 |  04:44.7   |   10:22.7   |   16:21.6   | 34:03.5 |
+|        n=44,735  (0.8)  | (1.5) |  (3.3)  |  (9.2)    (21.4)       (45.6)        (65.9)    (139.3) |
+
+ Average times by NCAA Division
+  Standard deviation in parentheses
+
+1
+
+                  100m    200m     400m      800m      1500m    3000m Steeple    5000m    10000m
+-------------- ------- ------- --------- --------- --------- --------------- --------- ---------
+      Division I  12.51   25.91    59.04    02:22.9   04:51.6      11:29.5      18:10.4   37:22.6
+        n=49,563  (0.8)   (1.6)    (3.8)    (11.3)    (19.6)       (48.5)       (75.3)    (149.9)
+     Division II  13.09   27.13   01:02.3   02:32.2   05:11.3      12:11.3      19:22.1   40:14.6
+        n=23,864  (0.9)   (1.9)    (5.0)    (13.7)    (22.7)       (66.3)       (92.1)    (205.9)
+    Division III  13.68   28.45   01:04.4   02:36.0   05:20.5      12:29.3      19:50.7   41:19.2
+        n=38,455  (1.1)   (2.2)    (5.2)    (14.2)    (27.0)       (60.4)       (93.5)    (190.6)
+
+  : Average times by NCAA Division\
+  Standard deviation in parentheses
+
+Differences in Times and Variance by Division
+---------------------------------------------
+
+Due to available scholarship money at prominent, nationally-recognized
+Division I schools, programs like the University of Georgia, the
+University of Oregon, and Northern Arizona University attract the top
+high school athletes from around the country. Division II programs,
+including Adams State University and Grand Valley State, also attract
+talented athletes, but their times are typically slower than that of a
+Division I prospect. Division III, the division with the widest variance
+across events, does not offer athletic scholarships but instead offers
+the opportunity to study at top-academically ranked institutions such as
+Massachusetts Institute of Technology, Johns Hopkins University, and
+Williams College while still competing at the NCAA level.
+
+The data support the claim that time increases as NCAA division
+increases; that is, Division I as the fastest and Division III as the
+slowest. For the most part, the standard deviation of each event
+increases alongside division as well. As expected, Division I has the
+fastest times and lowest variance across all events. Prospective
+student-athletes hoping to compete at the NCAA level should use Table 1
+to determine what might be a best-fit NCAA division given their current
+athletic ability. While they must take into account time for improvement
+between high school and college, the table presented should be adequate
+as a rough estimate of the competition to expect at each division.
+
+It should also be noted that standard deviation is also much higher, on
+average, for females as opposed to males across events. This phenomenon
+is discussed and represented graphically in Section 2.1. This is likely
+correlated with Title IX imperatives and programs accepting women with
+lower athletic standards relative to their male teammates in order to
+meet roster requirements.
+
+Participation
+-------------
+
+Consider the differences in participation between male and female
+athletes in Table 1. While both have relatively similar numbers across
+all divisions, there are several more females who compete at the
+Division I level than males. Likewise, there are many more male track
+athletes in Division III than females. Division II numbers are
+relatively constant across both genders.
+
+While Title IX imperatives have mandated schools provide equal athletic
+roster spots for men and women, men's track & field is often one of the
+sports "cut\" to make room for women's scholarships at the Division I
+level. For example, several nationally recognized institutions such as
+Vanderbilt University, Southern Methodist University, University of
+Maryland, and Temple University do not offer men's track & field, but do
+offer women's. Additionally, women's programs often times increase their
+roster sizes larger than their male counterparts to meet Title IX
+standards and make up for the discrepancies in participation numbers
+caused by the large cohort of football athletes.
+
+Because of the lower number of roster spots available for males in
+Division I, many prospective male college athletes flock to Division III
+to continue their passion for the sport. Furthermore, male enrollment in
+D-III private schools has been declining in recent years, so
+institutions are expanding opportunities in track & field to enroll more
+males. These phenomenons occurring in collegiate athletics can help
+explain the discrepancies in participation numbers across divisions and
+genders.
+
+Differences in Time Distribution between Genders
+------------------------------------------------
+
+When loading our data into Weka, the first visualization that pops up is
+a distribution table by each event. When first looking at these
+distributions, it became apparent that there were two distinct bell
+curves: one of which we assumed would be for men, and the other for
+women.
+
+We tested this hypothesis by making histograms of the figures by gender.
+When looking at the results, our hypothesis was correct. We also noticed
+that male times are much more "centralized\" than female times, as the
+males--depicted in dark blue--have a skinnier, yet taller bell curve.
+Female times--depicted in green--have more variance and are more widely
+distributed. Males and females together are shown in light blue,
+displaying the initial trends we first discovered such as the distinct
+bell curves.
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist100.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist200.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist400.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist800.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist1500.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist3000.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist5000.jpg){#fig:relationship
+width="\\linewidth"}
+
+![Density functions of each
+event[]{label="fig:relationship"}](hist10000.jpg){#fig:relationship
+width="\\linewidth"}
+
+Notice that some events have more normally distributed times than
+others. For example, the 100m, 3000m Steeplechase, and 10000m races have
+roughly one local maximum (across both genders, as depicted in light
+blue) as opposed to the other events which have two. This could
+correspond to these events being the most "extreme\" of the track events
+offered as the 100m dash is the shortest event contested and the 10000m
+race is the longest. Furthermore, hurdle heights differ slightly between
+males and females in the 3000 Steeplechase which closes the gap between
+the two genders in competition time. For this reason, the 3000m
+Steeplechase is not a prominent event featured in our analysis.
+
+Regression techniques
+=====================
+
+Using Simple OLS as a Predictor
+-------------------------------
+
+Due to the highly correlated nature of track & field results, one could
+use this data to make predictions of what time to expect in an event
+based off results from another event. Let's take, for example, the 100
+and 200 meter dash. Typically, the faster an athlete can cover 100
+meters on foot, the faster they can cover 200 meters as well. When
+looking at this relationship graphically in Figure 2.a, the correlation
+is apparent.
+
+![100m and 200m.](100200.jpg){width="\\linewidth"}
+
+![800m and 1500m.](8001500.jpg){width="\\linewidth"}
+
+![5000m and 10000m.](5k10k.jpg){width="\\linewidth"}
+
+The same relationship can be inferred between "similar\" events. For the
+sake of simplicity, we will define three "similar\" event groups from
+this dataset. We will define the "sprints\" group as athletes who have
+100m and 200m times; the "middle distance\" group as 800m and 1500m
+athletes; and the "distance\" group as 5000m and 10000m runners. In this
+section, we will be looking primarily at the relationships between these
+similar events, represented graphically in Figure 2.
+
+A simple OLS regression model was written to predict times within
+"similar\" event groups. A sample equation to predict 200m times from
+100m times is shown below: $$\begin{aligned}
+\mathrm{time200}_{i} = \beta_{0} & + \beta_{1}  \mathrm{time100}_{i} + \upsilon\end{aligned}$$
+When repeating this for middle-distance and distance groups, a
+regression output was produced with the coefficients all highly
+statistically significant at P $<$ 0.001. With the slope coefficients
+and constants provided by the regression, when providing a sample time,
+a predicted time can be estimated (shown in Figure 3).
+
+------- ------------------ -- ------ ------------------- -- ------- --------------------
+   100m    $\widehat{200m}$      800m   $\widehat{1500m}$      5000m   $\widehat{10000m}$
+   10.00        20.25            1:50        3:51.17           15:00         31:32
+   10.50        21.33            1:55        4:00.59           15:15         32:04
+   11.00        22.42            2:00        4:10.02           15:30         32:36
+   11.50        23.51            2:05        4:19.44           15:45         33:08
+   12.00        24.60            2:10        4:28.86           16:00         33:40
+   12.50        25.68            2:15        4:38.28           16:15         34:11
+   13.00        26.77            2:20        4:47.70           16:30         34:43
+   13.50        27.86            2:25        4:57.12           16:45         35:15
+------- ------------------ -- ------ ------------------- -- ------- --------------------
+
+Therefore, when predicting across similar events, it is best to use the
+simple OLS model to estimate the true value. However, this same
+significance of correlation should not be taken for granted across
+"dissimilar\" events. For example, take a look at Table 2 which shows a
+correlation matrix of each event's correlation with one another. Notice
+the declining nature of the correlation as the events become less
+similar between one another, especially in the 100m. As each event
+distance increases, the correlation coefficient decreases.
+
+When regressing each event on 5000m time using simple OLS, the R-squared
+value increases significantly as the event distance increases and
+becomes more aligned with the 5K. 800m time explains 77.9% of variation
+in 5K time, whereas 10K time accounts for nearly 94%. We will discuss
+applications to use multiple-linear regression techniques in Section 3.2
+which can apply to predictions across dissimilar events; for example,
+predicting 400m time based off of 100m time and 200m time.
+
+c\*7\|E\| & & & & & & &\
+100m & 1 & 0.9504 & 0.8403 & 0.6258 & 0.2018 & 0.0986 & 0.0407\
+200m & 0.9504 & 1 & 0.9288 & 0.7075 & 0.4475 & 0.5133 & 0.5583\
+400m & 0.8403 & 0.9288 & 1 & 0.8811 & 0.5244 & 0.5949 & 0.2705\
+800m & 0.6258 & 0.7075 & 0.8811 & 1 & 0.9372 & 0.8826 & 0.849\
+1500m & 0.2018 & 0.4475 & 0.5244 & 0.9372 & 1 & 0.9479 & 0.9365\
+5000m & 0.0986 & 0.5133 & 0.5949 & 0.8826 & 0.9479 & 1 & 0.9672\
+10000m & 0.0407 & 0.5583 & 0.2705 & 0.849 & 0.9365 & 0.9672 & 1\
+
+Multiple-Linear Regression Applications and Biasedness
+------------------------------------------------------
+
+As robust as this dataset is, it would be a crime to solely use ordinary
+least squares regression techniques. In fact, using a multiple-linear
+regression model would be ideal for data in this nature. To get the best
+linear unbiased estimate, a user of this data should apply as many
+variables as possible to get the ideal result. It is our hope to publish
+this data to a website in the near future so a user can specify as many
+or as little variables as possible to decrease bias and get the desired
+prediction.
+
+Take, for example, an NCAA Division I All-American male. This young man
+has excelled in the 800m this season, and has also run some decent 1500m
+times. However, his coach is debating entering him in the 5000m at their
+conference meet in an attempt to score points for their team. The
+athlete has never run a 5000m race before, but his coach, who happens to
+be an econometrician, hypothesizes he can lock up at least a top-5
+finish. The coach plugs his 800m time into the equation to test this
+hypothesis and predict his 5K time. However, the economist coach is
+shocked at how fast this time is, and knows this is due to the
+dissimilarity between middle-distance and distance as well as the
+dreaded omitted-variable bias and zero-conditional mean violation.
+
+The bias in the predicted 5000m is an underestimate due to this omitted
+variable. In other words, the true value of the predicted 5K time is
+slower than the one outputted by the regression. Once controlling for
+1500m time as well, the estimator becomes less biased and the predicted
+5000m comes out more accurate. This increases the R-sqaured value of the
+regression and pushes the estimated value closer to its true value. If
+the coach did not take into account this omitted variable bias, his
+athlete would have been unlikely to score in the 5000m, and would have
+performed worse off in the 800m as well due to fatigue.
+
+The more parameters entered in the analysis, the more accurate an
+estimation will become. For example, the Division I All-American male
+mentioned above may have a different trend-line across events than a
+Division III, back-of-the-pack female runner. The relationship produced
+by the regression is linear in nature; however, that relationship
+changes slightly as variables are added or change. Controlling for those
+factors (i.e. NCAA division, gender, and class year) in the regression
+will produce a more accurate, less-biased outcome. A sample equation a
+user could enter is below: $$\begin{aligned}
+\mathrm{time5000}_{i} = \beta_{0} & + \beta_{1}  \mathrm{time800}_{i} + \beta_{2}  \mathrm{time1500}_{i} + \beta_{3}  \mathrm{time10000}_{i} + \beta_{4}  \mathrm{male}_{i} + \beta_{5}  \mathrm{NCAAdiv}_{i} + \upsilon \end{aligned}$$
+
+This equation would provide a much more accurate prediction of 5000m
+time for the athlete than the original simple OLS model earlier
+referenced.
+
+Shoulders of Giants: The Riegel Model
+-------------------------------------
+
+The first person to develop an analysis on the prediction of race times
+for runners and other athletes was the American research engineer, Peter
+Riegel. While Riegel primarily focused his research on bioengineering,
+deep sea diving equipment, and air flow in coal mines, he also provided
+measurement techniques for USA Track & Field (USATF). Riegel
+additionally designed and measured marathon courses for multiple
+Olympics and Olympic Trials. In addition to his measurement research,
+Riegel proposed a formula to predict race times for one distance based
+off another: $$\begin{aligned}
+\mathrm{Time}_{2} = \mathrm{Time}_{1} \times (\mathrm{Distance}_{1} \div \mathrm{Distance}_{2})^{1.06}\end{aligned}$$
+This rather elementary equation, first published in a 1977 article of
+*Runner's World*, has been used by many to predict race times based off
+another. It has been criticized by many due to predicting seemingly
+unobtainable times.[^1]
+
+As simple as this equation is, it does not account for the
+aforementioned omitted variable bias and zero conditional mean violation
+that come along with only including one "event\" variable. To provide
+the best linear unbiased estimator of race times, more than just one
+event should be entered in the equation. Therefore, it is our belief
+that the multiple-linear regression model provided with our data should
+provide the more accurate analysis on the prediction of times,
+especially for collegiate athletes. We believe that the multiple-linear
+regression model provided with our data should provide the more accurate
+analysis on the prediction of times. We hope to analyze this claim in
+the future.
+
+Classification Analysis
+=======================
+
+Often times in track meets, schools from all NCAA divisions compete
+against one another head-to-head. As distance runners for Rhodes, we
+have often toed the line against top NCAA D-I programs such as Duke,
+Michigan State, Kentucky, and Colorado. In these races, it gives
+ourselves a chance to see how we stack up against runners from more
+historically successful programs. We often find ourselves,
+nationally-competitive NCAA Division III runners, beating some of these
+athletes, even though they are given the clout of athletic scholarships
+and many more resources thrown into their track program that come along
+with attending a Division I institution.
+
+This begs the question, does NCAA division make as big of a difference
+in performance as it is made out to be? Additionally, due to the
+homogenous nature of track & field events, one could assert that the top
+NCAA Division I female runner would most likely be the best athlete on a
+mid-tier Division III men's team. Is there a robust difference across
+genders as well? To examine this question, we will be using
+classification algorithms to assert if these dichotomies across NCAA
+divisions and genders are as prominent as they are traditionally
+believed to be.
+
+Classification between Gender
+-----------------------------
+
+Often times in track meets, heats of the 10000m will be combined with
+men and women in the same race. While the results are still separated by
+gender, the desegregation of sexes in this event is done to save time
+(after all, two heats of 10000 meter races could take up to 90 minutes
+to complete). While men are typically faster across the various
+distances in track & field, this gives a chance for the top women
+athletes to chase after and beat the bottom-of-the-pack males in the
+same race. To examine this phenomenon, we will be using a Naı̈ve Bayes
+classification algorithm to classify NCAA athletes by gender. The
+algorithm correctly classifies 199,231 of the 225,335 athletes, and
+produces an accuracy rate of 88.4%.
+
+The sole attribute that shows the differentiation between males and
+females in this dataset is time, as males are traditionally faster than
+females on average. Due to the fact that this classification model was
+built solely on time variables, some of the slower males (10,891
+athletes) were assigned as female while the faster females (15,233
+athletes) were classified as male. The result, displayed in the
+confusion matrix in Table 3, suggests that nearly 12% of all NCAA track
+& field athletes would be a good fit athletically on a team of the
+opposite gender, regardless of division. This result, while still
+significant at 88.4%, suggests that there is still a divide between
+genders athletically at the NCAA level. However, the fastest females are
+still competitive with the slowest males.
+
+---------- -------- --------- --------
+
+                        Male     Female
+   \*Actual    Male    102,582   10,891
+              Female   15,233    96,649
+                                
+---------- -------- --------- --------
+
+  : Confusion Matrix between Genders[]{label="fig:relationship"}
+
+Classifying NCAA Divisions
+--------------------------
+
+Society portrays NCAA Division I being head and shoulders above Division
+II and Division III. After all, Division I is where the athletes are
+given top resources and scholarships with the promise of a professional
+career. Division II offers some scholarships, but professional careers
+are less common. Lastly, there's Division III, where athletes are given
+the opportunity to pursue their sport without athletic scholarships.
+When looking solely at the athletic data within track & field times, the
+divide between NCAA divisions is not as dichotomous as many athletes and
+fans portray it to be.
+
+The Naı̈ve Bayes classification algorithm was originally run to classify
+athletes, both male and female, into NCAA divisions based off of their
+performances in various events. The results in our original model were
+fascinating, as the algorithm only correctly classified 49.52% of all
+NCAA track & field athletes into the correct division. However, with
+these results, only two observations were placed into Division II. With
+that discrepancy, we decided to break it down even further by
+classifying athletes into NCAA division by gender. The algorithm
+performed marginally better with the results in the confusion matrices
+in Table 4.
+
+0.5
+
+-------- ------- -------- ----- --------
+
+
+             D-I    34,552   188   9,960
+   Actual   D-II    13,082   94    10,862
+            D-III   16,170   140   28,425
+                                  
+-------- ------- -------- ----- --------
+
+  : NCAA Division Classification Confusion Matrix by Gender
+
+0.5
+
+-------- ------- -------- ----- --------
+
+
+             D-I    41,755   168   7,640
+   Actual   D-II    13,469   197   10,198
+            D-III   14,041   312   24,102
+                                  
+-------- ------- -------- ----- --------
+
+  : NCAA Division Classification Confusion Matrix by Gender
+
+The algorithm performed slightly better for females than males,
+suggesting that the divide between NCAA divisions are greater for women
+and that times differ more across division. The algorithm correctly
+classified 59.03% of women as opposed to only 55.58% of men.
+
+Despite the adjustments made to break up the NCAA division
+classification by gender, the algorithm still performed poorly when
+classifying Division II athletes. While Division I athletes typically
+lead all divisions in time, and Division III runners are typically
+slower and bring up the rear, Division II athletes find themselves
+toward the middle. This dilemma makes it harder to classify Division II
+athletes especially considering the division's large variation in times.
+This phenomenon is displayed in Figure 4, which shows all-division
+percentile on the y-axis and the athlete's time on the x-axis for males
+(left) and females (right). The data points are broken up by NCAA
+division with navy blue representing D-I, cranberry D-II, and mint green
+D-III. The graph was created for the 5000m run, but the trends are
+similar across all events.
+
+![Male and Female 5000m time by All-Division
+Percentile[]{label="fig:relationship"}](5000perc.jpg){#fig:relationship
+width="15cm"}
+
+Association Mining: What determines your events?
+================================================
+
+Given that each athlete (or observation) either has a time in an event
+or no time in that event, we decided to manipulate the data to mine
+association rules on what determines the event athletes run. To do this,
+we modified the numerical value for each "time\" variable to a binary
+value of 1 if the athlete had a value for that time, or 0 if they did
+not. Therefore, think of the new variables representing "ran100\" rather
+than "time100\".
+
+The Apriori algorithm we performed produced a large information gain on
+these association rules. However, due to our athletic intuition and
+prior knowledge, these results did not reveal much. For example, it is
+common knowledge that a 100m sprinter is unlikely to run the 10000m at
+any point during their athletic career. Because we knew the algorithm
+including all events involved extraneousness, we decided to cut down the
+analysis to the aforementioned "similar events.\" However, this time,
+the similar events will be generalized as the sprints (100m, 200m, and
+400m) and distance (800m, 1500m, 5000m 10000m).
+
+A new dataset was created with just athletes who have run the 100m,
+200m, and/or 400m races to create the following association rules. For
+the sprints group, the best associations we found were the following:
+
+*ran100* = 0 $\wedge$ *ran200* = 0 $\rightarrow$ *ran400* = 1
+(Confidence = 1, Lift = 1.94)
+
+*ran100* = 0 $\wedge$ *ran400* = 0 $\rightarrow$ *ran200* = 1
+(Confidence = 1, Lift = 1.52)
+
+*ran200* = 0 $\wedge$ *ran400* = 0 $\rightarrow$ *ran100* = 1
+(Confidence = 1, Lift = 1.93)
+
+*ran200* = 0 $\wedge$ *ran400* = 0 $\rightarrow$ *ran100* = 1
+(Confidence = 0.82, Lift = 1.72)
+
+The same pruning was repeated for the distance runners, as we created a
+dataset with only those who have run a 800m, 1500m, 5000m or 10000m race
+to provide the following association rules:
+
+*ran800* = 1 $\wedge$ *ran5000* = 0 $\rightarrow$ *ran10000* = 0
+(Confidence = 1, Lift = 1.19)
+
+*ran5000* = 0 $\rightarrow$ *ran10000* = 0 (Confidence = 0.98, Lift =
+1.17)
+
+*ran800* = 1 $\rightarrow$ *ran10000* = 0 (Confidence = 0.95, Lift =
+1.14)
+
+*ran1500* = 1 $\rightarrow$ *ran10000* = 0 (Confidence = 0.85, Lift =
+1.01)
+
+Splitting up the association by sprint and distance groups allowed us to
+gain some more information on a runner's likelihood to run an event
+based off what they have run in the past. For example, running the 800m
+race implies that you will not run a 10000m race, but running a 10000m
+race does not necessarily imply sitting out in the 800m; Raines (a
+400m/800m runner) and Hearn (a 10000m *and* 800m runner) are examples of
+this association. This data can also be replicated in a J48 decision
+tree.
+
+Conclusions and Future Work
+===========================
+
+While we are all pleased with many of the trends and predictions to come
+out of this data, there are many more analyses to be had based on how
+robust the dataset is. As mentioned earlier in the paper, it is Adam's
+hope that he can publish this data as a resource for coaches and
+athletes alike to use OLS and multiple-linear regression techniques to
+use their current times to predict estimated times in a separate event
+and adding parameters (NCAA division, gender, class year, etc.) as
+necessary.
+
+We would like to analyze the accuracy of our multi-linear regression
+model compared to the similar Riegel Model. If proven more accurate, it
+is our hope that this data will be used as the go-to resource for all
+athletes to use to predict race times. Additionally, we could use
+boosting to create a hybrid of the two estimations which could
+potentially result in an even more accurate model.
+
+In the spring of 2019, Hearn plans to continue this research by merging
+in budget statistics for track and field programs using the Equity in
+Athletics Data Analysis database. With this data, he will be able to
+determine the ideal funding for each program to minimize cost and
+maximize athletic performance in track & field.
+
+The dataset also continues to grow at the conclusion of each season.
+With each new spring track season comes roughly 35,000 more observations
+adding on to the data that has already been collected, resulting in an
+even more accurate model. Also, the dataset currently only includes
+outdoor track times. In the future, new mining methods may be
+implemented to include indoor track indoor times as well. With this
+data, an indoor/outdoor conversion coefficient for each event can be
+created as a resource for coaches and athletes. Furthermore, since the
+data are longitudinal in nature, we would like to modify the data to
+track athletes individually to determine improvement across their
+collegiate career, and examine if this differs by NCAA division and
+gender.
+
+As the possibilities of analysis with this dataset are endless, it is
+our hope that we can continue our research on this topic in the future.
+Whether we present on this research at URCAS, or simply provide the
+public with a website of prediction models, we hope that coaches and
+athletes can use this data as a means to achieve their respective goals.
+
+[^1]: "Marathon Predictions 3.0." *FetchEveryone.com*,
+    www.fetcheveryone.com/marathonprediction.
