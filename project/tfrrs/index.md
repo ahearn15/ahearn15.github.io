@@ -1,6 +1,6 @@
 ---
 title: Using NCAA Track Data as a Predictor for Race Times
-summary: NCAA Track & Field results can be mined to create an ecosystem of robust running data.
+summary: NCAA T/F results can be mined to create an ecosystem of robust running data.
 tags:
 - Running
 date: "2019-11-22T00:00:00Z"
