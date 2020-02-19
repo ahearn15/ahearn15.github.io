@@ -1,5 +1,5 @@
 ---
-title: Internal Project
+title: Fixed effects paper
 summary: An example of using the in-built project page.
 tags:
 - Academic
