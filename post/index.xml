@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Adam Hearn</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://achearn.com/post/</link>
+      <atom:link href="https://achearn.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://achearn.com/img/icon-192.png</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://achearn.com/post/</link>
     </image>
     
     <item>
       <title>Jesus is King: A departure from Kanye&#39;s recent projects or a return to his roots?</title>
-      <link>/post/jik/</link>
+      <link>https://achearn.com/post/jik/</link>
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/post/jik/</guid>
+      <guid>https://achearn.com/post/jik/</guid>
       <description>&lt;p&gt;This is a work in progress.&lt;/p&gt;
 </description>
     </item>
