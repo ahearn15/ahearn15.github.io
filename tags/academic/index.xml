@@ -2,28 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Academic | Adam Hearn</title>
-    <link>https://achearn.com/tags/academic/</link>
-      <atom:link href="https://achearn.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/academic/</link>
+      <atom:link href="/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Academic</title>
-      <link>https://achearn.com/tags/academic/</link>
+      <link>/tags/academic/</link>
     </image>
     
     <item>
+      <title>Isolating the Mechanisms Behind the Test-Optional Admissions Policy</title>
+      <link>/project/to/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/to/</guid>
+      <description>
+
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+
+&lt;p&gt;The test-optional admissions policy is a growing tactic among four-year postsecondary institutions in the United States. While each institution decides individually whether or not to implement this policy, there has been little research done in evaluating these collective decisions across colleges and universities. By using machine learning algorithms across a range of institutions, I am able to uncover trends across schools that shine a light on why institutions may be heading in this direction. I find that the motives for implementing this policy may be different depending on the selectivity of the school.&lt;/p&gt;
+
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-opt-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/test_opt.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Everyone Wants to Win: Even the Admissions Officers</title>
-      <link>https://achearn.com/project/sensem/</link>
+      <link>/project/sensem/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/sensem/</guid>
+      <guid>/project/sensem/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;Beginning each year around August, prospective college-goers begin filling out their applications to send off to institutions where they may end up for the next four years. The elements that go into this decision include the academic quality of the institution, the campus climate, and for some, the athletic successes the school has achieved in previous years. My research focuses on the last of these elements, as I assessed how collegiate athletics at the highest level impact postsecondary institutional metrics. In doing so, I found significant evidence that football success leads to increased applications, first-year enrollment, and reported SAT scores.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
 </description>
     </item>
     

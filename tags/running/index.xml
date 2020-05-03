@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Running | Adam Hearn</title>
-    <link>https://achearn.com/tags/running/</link>
-      <atom:link href="https://achearn.com/tags/running/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/running/</link>
+      <atom:link href="/tags/running/index.xml" rel="self" type="application/rss+xml" />
     <description>Running</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Running</title>
-      <link>https://achearn.com/tags/running/</link>
+      <link>/tags/running/</link>
     </image>
     
     <item>
       <title>Using NCAA Track Data as a Predictor for Race Times</title>
-      <link>https://achearn.com/project/tfrrs/</link>
+      <link>/project/tfrrs/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/tfrrs/</guid>
+      <guid>/project/tfrrs/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
