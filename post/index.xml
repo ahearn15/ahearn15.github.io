@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Adam Hearn</title>
-    <link>https://achearn.com/post/</link>
-      <atom:link href="https://achearn.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Posts</title>
-      <link>https://achearn.com/post/</link>
+      <link>/post/</link>
     </image>
     
     <item>
       <title>Memorandum to Betsy Devos</title>
-      <link>https://achearn.com/post/for_prof_memo/</link>
+      <link>/post/for_prof_memo/</link>
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/post/for_prof_memo/</guid>
+      <guid>/post/for_prof_memo/</guid>
       <description>
 
 &lt;h3 id=&#34;memorandum&#34;&gt;MEMORANDUM&lt;/h3&gt;
@@ -79,9 +79,9 @@
     
     <item>
       <title>Jesus is King: A departure from Kanye&#39;s recent projects or a return to his roots?</title>
-      <link>https://achearn.com/post/jik/</link>
+      <link>/post/jik/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/post/jik/</guid>
+      <guid>/post/jik/</guid>
       <description>&lt;p&gt;This is a work in progress.&lt;/p&gt;
 </description>
     </item>
