@@ -1,2 +1,2 @@
 setwd("/Users/adamhearn/Desktop/Website")
-blogdown::build_site()
+blogdown::build_site(local=FALSE)
