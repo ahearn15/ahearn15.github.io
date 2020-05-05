@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing_samples | Adam Hearn</title>
-    <link>/writing_samples/</link>
-      <atom:link href="/writing_samples/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://achearn.com/writing_samples/</link>
+      <atom:link href="https://achearn.com/writing_samples/index.xml" rel="self" type="application/rss+xml" />
     <description>Writing_samples</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://achearn.com/img/icon-192.png</url>
       <title>Writing_samples</title>
-      <link>/writing_samples/</link>
+      <link>https://achearn.com/writing_samples/</link>
     </image>
     
     <item>
       <title>Memorandum to Betsy Devos</title>
-      <link>/writing_samples/for_prof_memo/</link>
+      <link>https://achearn.com/writing_samples/for_prof_memo/</link>
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/writing_samples/for_prof_memo/</guid>
+      <guid>https://achearn.com/writing_samples/for_prof_memo/</guid>
       <description>
 
 &lt;h3 id=&#34;memorandum&#34;&gt;MEMORANDUM&lt;/h3&gt;
