@@ -57,17 +57,7 @@
   </url>
   
   <url>
-    <loc>https://achearn.com/post/for_prof_memo/</loc>
-    <lastmod>2020-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://achearn.com/writing_samples/for_prof_memo/</loc>
-    <lastmod>2020-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://achearn.com/post/</loc>
     <lastmod>2020-02-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -79,11 +69,6 @@
   <url>
     <loc>https://achearn.com/project/sensem/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://achearn.com/post/jik/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -172,6 +157,10 @@
   
   <url>
     <loc>https://achearn.com/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://achearn.com/post/</loc>
   </url>
   
 </urlset>
