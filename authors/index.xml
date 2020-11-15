@@ -2,32 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Adam Hearn</title>
-    <link>https://achearn.com/authors/</link>
-      <atom:link href="https://achearn.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Authors</title>
-      <link>https://achearn.com/authors/</link>
+      <link>/authors/</link>
     </image>
     
     <item>
       <title></title>
-      <link>https://achearn.com/authors/admin/</link>
+      <link>/authors/admin/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/authors/admin/</guid>
-      <description>&lt;p&gt;Originally from Athens, GA, Adam Hearn is a current graduate student studying Data Science for Public Policy at the McCourt School of Public Policy at Georgetown University. As a graduate of Rhodes College (2019), Adam acquired his B.A. in Economics and minor in Computer Science. Adam enjoys studying the intersection of these two disciplines, by using data mining and machine learning to apply econometric models and consequently advance and implement public policy, especially in the field of postsecondary education.&lt;/p&gt;
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;I am a current graduate student studying Data Science for Public Policy at Georgetown University. Skilled in computational social science research, machine learning (supervised and unsupervised), causal inference, data visualization, and administrative data governance. Experienced in the postsecondary sector through appointments at SHEEO, AIR, and College Transitions.&lt;/p&gt;
 
-&lt;p&gt;CV can be downloaded &lt;a href=&#34;https://achearn.com/files/hearn_resume.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My mission is to leverage my data science and technical background for the public good, and increase postsecondary attainment as a result.&lt;/p&gt;
+
+&lt;p&gt;CV can be downloaded &lt;a href=&#34;/files/hearn_resume.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Robert Ford</title>
-      <link>https://achearn.com/authors/robert-ford/</link>
+      <link>/authors/robert-ford/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/authors/robert-ford/</guid>
+      <guid>/authors/robert-ford/</guid>
       <description></description>
     </item>
     

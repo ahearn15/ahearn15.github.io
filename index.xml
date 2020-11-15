@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adam Hearn</title>
-    <link>https://achearn.com/</link>
-      <atom:link href="https://achearn.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Adam Hearn</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Adam Hearn</title>
-      <link>https://achearn.com/</link>
+      <link>/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://achearn.com/courses/example/example1/</link>
+      <link>/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://achearn.com/courses/example/example1/</guid>
+      <guid>/courses/example/example1/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>https://achearn.com/courses/example/example2/</link>
+      <link>/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://achearn.com/courses/example/example2/</guid>
+      <guid>/courses/example/example2/</guid>
       <description>
 
 &lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
@@ -84,17 +84,17 @@
     
     <item>
       <title>Skills</title>
-      <link>https://achearn.com/skills/</link>
+      <link>/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/skills/</guid>
+      <guid>/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example Talk</title>
-      <link>https://achearn.com/talk/example/</link>
+      <link>/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://achearn.com/talk/example/</guid>
+      <guid>/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -114,105 +114,241 @@
     </item>
     
     <item>
+      <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
+      <link>/post/gsc/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/gsc/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
+
+&lt;p&gt;This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-generalized-synthetic-control&#34;&gt;Why Generalized Synthetic Control?&lt;/h2&gt;
+
+&lt;p&gt;The fundamental challenge of causal inference is the parallel trends assumption. To quote Angrist and Pischke (2009), two-way fixed effects models produce non-biased, causal estimates only in “parallel worlds.” This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had &lt;em&gt;not&lt;/em&gt; attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-generalized-synthetic-control&#34;&gt;What is Generalized Synthetic Control?&lt;/h2&gt;
+
+&lt;p&gt;The Generalized Synthetic Control Model “imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients” (Xu, 2017). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.&lt;/p&gt;
+
+&lt;p&gt;The model first estimates an interactive fixed-effect model using only the control group data, obtaining a fixed number of latent factors using a cross-validation approach. In other words, the algorithm selects the number of latent factors, &lt;em&gt;k&lt;/em&gt;, that minimizes the Mean Squared Prediction Error (MSPE). Next, the algorithm estimates factor loadings for each treated unit. Lastly, the algorithm imputes treated counterfactuals and standard errors based on the estimated factors and factor loadings. This is the step in which the $\beta$ coefficients are generated, while standard error estimates are calculated using bootstrapping techniques. These steps become much clearer once the visualizations are produced.&lt;/p&gt;
+
+&lt;h2 id=&#34;case-study-the-test-optional-movement&#34;&gt;Case Study: The Test-Optional Movement&lt;/h2&gt;
+
+&lt;p&gt;Since 2003, institutions have increasingly begun to drop the standardized-testing requirement for admission. In the 2003-04 admission cycle, over 75% of degree-granting, 4-year institutions required either the SAT or ACT upon application. However, in 2018-19, this number had dropped to just 48.3% with institutions increasingly shifting towards a policy of neither recommending nor requiring scores.&lt;/p&gt;
+
+&lt;p&gt;Though most institutions who adopt this test-optional framework are under Private control, the Public sector has seen an increase in dropping test-requirements amidst the coronavirus pandemic. With the closing of many test-centers, many institutions are shifting away from the testing requirements in the 2021 admissions cycle. Given the uncertainty of the pandemic, however, it is possible that these policies may last longer than just one year. Using the Generalized Synthetic Control method, I can examine the post-implementation effects of this policy on low-income and minority enrollment.&lt;/p&gt;
+
+&lt;p&gt;The theoretical framework claims that less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself. Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method.&lt;/p&gt;
+
+&lt;h3 id=&#34;dataset&#34;&gt;Dataset&lt;/h3&gt;
+
+&lt;p&gt;The pre-processing of the data would be conducted just as we would if we were running a two-way fixed-effects regression with unique Year-ID pairs. In other words, we want a panel data format such as the following (note this is fake data):&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;UnitID&lt;/th&gt;
+&lt;th&gt;Test-Optional?&lt;/th&gt;
+&lt;th&gt;Pct. Pell Enrollment&lt;/th&gt;
+&lt;th&gt;Pct. Minority Enrollment&lt;/th&gt;
+&lt;th&gt;…&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;367546&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.13&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;485656&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;td&gt;0.45&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;324635&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.09&lt;/td&gt;
+&lt;td&gt;0.23&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;..&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2017&lt;/td&gt;
+&lt;td&gt;367546&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.24&lt;/td&gt;
+&lt;td&gt;0.37&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2017&lt;/td&gt;
+&lt;td&gt;485656&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.43&lt;/td&gt;
+&lt;td&gt;0.67&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2017&lt;/td&gt;
+&lt;td&gt;324635&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.13&lt;/td&gt;
+&lt;td&gt;0.25&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the Integrated Postsecondary Education Data System (IPEDS). Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors.&lt;/p&gt;
+
+&lt;h3 id=&#34;running-the-algorithm&#34;&gt;Running the Algorithm&lt;/h3&gt;
+
+&lt;p&gt;With the GSC model, I can combat the parallel trends assumption of causal inference with high-confidence uncertainty estimates. Using GSC, there needs to be a balance between the number of years an institution is in the “pre-treatment” period as well as the number of years following the implementation. The higher the minimum value of pre-treatment values set as the parameter, the less biased the results will be. However, as this value increases, the number of observations decrease. With that tradeoff in mind, I find the best balance for both models in using 6 pre-treatment periods in the Pell model and 11 pre-treatment periods in the URM model. Further, this allows for both models to be examined with four-years of post-policy implementation effects.&lt;/p&gt;
+
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;After running the algorithm, we get the following regression output:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Pct. full-time first-time &lt;br /&gt;students Pell&lt;/th&gt;
+&lt;th&gt;Pct. degree-seeking first-time &lt;br /&gt;students minority&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Test-optional&lt;/td&gt;
+&lt;td&gt;2.166***  &lt;br /&gt;(0.488)&lt;/td&gt;
+&lt;td&gt;2.287***  &lt;br /&gt;(0.728)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Controls&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Institution/year fixed effects&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Unobserved Factors&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Observations&lt;/td&gt;
+&lt;td&gt;1118&lt;/td&gt;
+&lt;td&gt;1055&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Treated&lt;/td&gt;
+&lt;td&gt;134&lt;/td&gt;
+&lt;td&gt;119&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;984&lt;/td&gt;
+&lt;td&gt;936&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Standard errors are based on parametric bootstraps (blocked at the institution level) of 2,500 times. Panel data from Title IV four-year degree-granting institutions. Years included are 2007-2017 in Column (1) and 2003-2017 in Column (2). *&lt;em&gt;p&lt;/em&gt;&amp;lt;0.05, **&lt;em&gt;p&lt;/em&gt;&amp;lt;0.01, ***&lt;em&gt;p&lt;/em&gt;&amp;lt;0.001.&lt;/p&gt;
+
+&lt;h3 id=&#34;result-summary&#34;&gt;Result Summary&lt;/h3&gt;
+
+&lt;p&gt;In short, I find that dropping the test-requirement is associated with roughly a 2-percentage point increase in both first-time Pell enrollment and underrepresented minority enrollment. These results are significant at the 99.9% confidence interval with standard errors based on 2,500 parametric bootstraps blocked at the institution level.&lt;/p&gt;
+
+&lt;p&gt;A visualization of this algorithm is displayed below. The AUC between the treated (solid) and counterfactual (dashed) lines represent the beta estimate of the independent variable of interest (the policy-change). Note that we have less data on the Pell treated and counterfactual averages since this variable did not become available in the IPEDS universe until 2008.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;tca.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The visualization above helps tremendously to explain how the Generalized Synthetic Control algorithm works. It uses factor loadings to match “treated” institutions with “control” institutions prior to treatment, so we can see where the control group would end up had they implemented the policy. In my experience as an econometrician, I believe the GSC algorithm creates a far more accurate measure of treatment effects than diff-in-diff or two-way fixed effects could by utilizing these factor weights and matching scores.&lt;/p&gt;
+
+&lt;p&gt;Further, we can investigate the average treatment effects on the institutions with the test-optional policy by period:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;att.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These visualizations display the $\beta$ coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region.&lt;/p&gt;
+
+&lt;p&gt;While the URM model is a bit nosier than the Pell model, we can still find significant treatment effects in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time t – 2, where the null hypothesis that $\beta = 0$ falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;The generalized synthetic control method is a wonderful supervised-learning approach to produce counterfactual estimates, eliminating much of the confoundedness found in OLS and Fixed-Effects regression techniques. Further, the algorithm allows you to produce beautiful visualizations that aid tremendously in explaining how the algorithm works to a non-technical audience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Isolating the Mechanisms Behind the Test-Optional Admissions Policy</title>
-      <link>https://achearn.com/project/to/</link>
+      <link>/project/to/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/to/</guid>
+      <guid>/project/to/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;The test-optional admissions policy is a growing tactic among four-year postsecondary institutions in the United States. While each institution decides individually whether or not to implement this policy, there has been little research done in evaluating these collective decisions across colleges and universities. By using machine learning algorithms across a range of institutions, I am able to uncover trends across schools that shine a light on why institutions may be heading in this direction. I find that the motives for implementing this policy may be different depending on the selectivity of the school.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Memorandum to Betsy Devos</title>
-      <link>https://achearn.com/writing_samples/for_prof_memo/</link>
-      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/writing_samples/for_prof_memo/</guid>
-      <description>
-
-&lt;h3 id=&#34;memorandum&#34;&gt;MEMORANDUM&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;To:&lt;/strong&gt; Betsy Devos, US Secretary of Education&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; Adam Hearn&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; February 22, 2020&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; Recommendation for Stricter Quality Control of For-Profit Institutions&lt;/p&gt;
-
-&lt;h3 id=&#34;recommendation&#34;&gt;Recommendation:&lt;/h3&gt;
-
-&lt;p&gt;I recommend that the Department of Education apply stricter quality control standards on for-profit colleges and universities. Students who attend these institutions are assured compelling employment post-graduation upon enrollment, but rarely are these promises realized. This leaky pipeline of at-risk students from the moment they step on campus (or boot up their computer, in the age of technology-driven education) to their nearly inevitable drop-out is explicitly due to the lack of governance from the Department of Education in this sector. With stricter accreditation standards and government regulation of these businesses, we can increase student attainment and postsecondary success, especially among those in traditionally underrepresented groups.&lt;/p&gt;
-
-&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;Those who attend for-profit institutions are not your typical, wide-eyed first-year college students. Instead, these students are disproportionately older, African-American, single parents.[&lt;a href=&#34;#_ftn1&#34;&gt;1]&lt;/a&gt; Frankly, your administration exploits these students to the point where they are more likely to drop out and default on their loans, leaving many of these students in a position where they would have been better off not going to college at all.[&lt;a href=&#34;#_ftn2&#34;&gt;2]&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Students are attracted to these for-profit institutions due to easy enrollment and help to find financial aid. However, many of these students are disappointed with the poor quality of education they receive.[&lt;a href=&#34;#_ftn3&#34;&gt;3]&lt;/a&gt; Post-graduation, this subsequently leads to troubles finding employment and unsustainable levels of debt. For-profit institutions account for roughly 22% of all postsecondary borrowers, yet these students comprise approximately 33% of all loan defaults.[&lt;a href=&#34;#_ftn4&#34;&gt;4]&lt;/a&gt; These numbers suggest that the for-profit sector primarily drives the ongoing student-loan crisis.&lt;/p&gt;
-
-&lt;p&gt;The policies (or lack thereof) set forth by the Department of Education concerning for-profit education exacerbate many of the issues in this sector of postsecondary education, disproportionately affecting minority groups.&lt;/p&gt;
-
-&lt;h3 id=&#34;key-proposals-for-stricter-quality-control-of-for-profit-institutions&#34;&gt;Key Proposals for Stricter Quality Control of For-Profit Institutions:&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Apply     stricter standards for accreditation agencies.&lt;/em&gt; The accreditation standards put forth by the     Accrediting Council for Independent Colleges and Schools (ACICS) and other     national accrediting agencies are far too lenient. Currently, ACICS claims     that for-profit institutions are required to report a retention rate of at     least 75%.[&lt;a href=&#34;#_ftn5&#34;&gt;5]&lt;/a&gt; Changing these accreditation standards to include     student outcomes (e.g., graduation rates and average debt accumulation)     would increase postsecondary student success. I understand this     administration has restored the accreditation powers of ACICS after losing     authority under the Obama administration. Still, I recommend that the     Department of Education work alongside this agency and other national     accreditors to amend their current accreditation policies to reflect     student outcomes.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Mandate for-profit institutions to publish attainment and default rates.&lt;/em&gt; By requiring for-profit colleges to publish attainment     outcomes and default rates, students would be more aware of the type of     education in this sector. In doing so, for-profit institutions would     either be (a) pushed to improve their practices further, or (b) forced out     of business. This policy would increase student outcomes while maintaining     for-profit competition.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Improve     information sharing on postsecondary options to prospective students.&lt;/em&gt; Students who attend for-profit institutions are more     likely to default on their loans than students who attend non-profit or     public colleges and universities.[&lt;a href=&#34;#_ftn6&#34;&gt;6]&lt;/a&gt;     This behavior is likely due to a     lack of information regarding federal loans given to prospective students     before enrollment. By providing more information on postsecondary access     to prospective students through brochures at public schools, prisons, and     VA groups, students will be more aware of their postsecondary options and     financial aid obligations before enrollment.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;conclusions-and-politics&#34;&gt;Conclusions and Politics:&lt;/h3&gt;
-
-&lt;p&gt;To ensure these recommendations land with your administration, I want to stress the importance of aligning higher education with the needs of the economy. Because of their high tuitions and needy students, for-profit institutions consume a large amount of federal aid with minimal returns to the students or the nation’s workforce.[&lt;a href=&#34;#_ftn7&#34;&gt;7]&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Student outcomes following enrollment at for-profit institutions are far inferior to those of non-profit or public colleges or universities, primarily due to the lack of regulation of this industry. To guarantee that the future workforce meets the needs of the economy, the quality of education received at the for-profit sector of postsecondary education needs to be on-par with its non-profit and public counterparts. These outcomes can be achieved by stricter accreditation standards while maintaining similar standards for enrollment.&lt;/p&gt;
-
-&lt;p&gt;The for-profit education industry exploits students of all backgrounds, including high-school drop-outs, single parents, and veterans. Your policies and actions regarding for-profit education have failed to recognize these groups and their career goals. As Secretary of Education, you should ensure that these underrepresented groups have little barriers to pursuing a quality postsecondary education with worthwhile outcomes and minimal debt. With these outcomes in mind, I hope that these recommendations and policies can gain traction under this administration.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref1&#34;&gt;1]&lt;/a&gt; Center for Analysis of Postsecondary Education and Employment. “For Profit Colleges by the Numbers.” February, 2018.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref2&#34;&gt;2]&lt;/a&gt; Cellini, Stephanie &amp;amp; Turner, Nicholas. (2018). “Gainfully Employed? Assessing the Employment and Earnings of For-Profit College Students Using Administrative Data.” Journal of Human Resources.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref3&#34;&gt;3]&lt;/a&gt; The Brookings Institute. “The Failings of Online For-Profit Colleges: Findings from Student Borrower Focus Groups.” March, 2019.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref4&#34;&gt;4]&lt;/a&gt; U.S. Department of Education, “Official Three-Year Cohort Default Rates for Postsecondary Schools.”  September 23, 2019.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref5&#34;&gt;5]&lt;/a&gt; Accrediting Council for Independent Colleges and Schools. “Accreditation Criteria: Policies, Procedures, and Standards.” September, 2019.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref6&#34;&gt;6]&lt;/a&gt; Jordan Scott-Clayton, “The Looming Student Loan Default Crisis is Worse Than We Thought.” The Brookings Institute, January 11, 2018.&lt;/p&gt;
-
-&lt;p&gt;[&lt;a href=&#34;#_ftnref7&#34;&gt;7]&lt;/a&gt; United States Senate Health, Education, Labor and Pensions Committee. “For Profit Higher Education: The Failure to Safeguard the Federal Investment and Ensure Student Success.” July 30, 2012.&lt;/p&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
 </description>
     </item>
     
     <item>
       <title>Everyone Wants to Win: Even the Admissions Officers</title>
-      <link>https://achearn.com/project/sensem/</link>
+      <link>/project/sensem/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/sensem/</guid>
+      <guid>/project/sensem/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;Beginning each year around August, prospective college-goers begin filling out their applications to send off to institutions where they may end up for the next four years. The elements that go into this decision include the academic quality of the institution, the campus climate, and for some, the athletic successes the school has achieved in previous years. My research focuses on the last of these elements, as I assessed how collegiate athletics at the highest level impact postsecondary institutional metrics. In doing so, I found significant evidence that football success leads to increased applications, first-year enrollment, and reported SAT scores.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
 </description>
     </item>
     
     <item>
       <title>Using NCAA Track Data as a Predictor for Race Times</title>
-      <link>https://achearn.com/project/tfrrs/</link>
+      <link>/project/tfrrs/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/tfrrs/</guid>
+      <guid>/project/tfrrs/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -941,9 +1077,9 @@ www.fetcheveryone.com/marathonprediction.&lt;/p&gt;
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>https://achearn.com/publication/preprint/</link>
+      <link>/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/preprint/</guid>
+      <guid>/publication/preprint/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
@@ -956,9 +1092,9 @@ www.fetcheveryone.com/marathonprediction.&lt;/p&gt;
     
     <item>
       <title>Slides</title>
-      <link>https://achearn.com/slides/example/</link>
+      <link>/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/slides/example/</guid>
+      <guid>/slides/example/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
@@ -1136,10 +1272,28 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>An example journal article</title>
-      <link>https://achearn.com/publication/journal-article/</link>
+      <link>/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/journal-article/</guid>
+      <guid>/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -1158,9 +1312,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>An example conference paper</title>
-      <link>https://achearn.com/publication/conference-paper/</link>
+      <link>/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/conference-paper/</guid>
+      <guid>/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
