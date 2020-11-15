@@ -533,17 +533,17 @@
 
 <h1 id="the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data">The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</h1>
 
-<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided.</p>
+<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
 
 <h2 id="why-generalized-synthetic-control">Why Generalized Synthetic Control?</h2>
 
-<p>The fundamental challenge of causal inference is the parallel trends assumption. To quote Angrist and Pischke (2009), two-way fixed effects models produce non-biased, causal estimates only in “parallel worlds.” This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had <em>not</em> attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.</p>
+<p>The fundamental challenge of causal inference is the parallel trends assumption. To quote <a href="https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf" target="_blank">Angrist and Pischke (2009)</a>, two-way fixed effects models produce non-biased, causal estimates only in <strong>“parallel worlds.”</strong> This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had **<em>not</em> **attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.</p>
 
 <h2 id="what-is-generalized-synthetic-control">What is Generalized Synthetic Control?</h2>
 
-<p>The Generalized Synthetic Control Model “imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients” (Xu, 2017). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.</p>
+<p>The Generalized Synthetic Control Model <strong>“imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients”</strong> (<a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B63A8BD7C239DD4141C67DA10CD0E4F3/S1047198716000024a.pdf/generalized_synthetic_control_method_causal_inference_with_interactive_fixed_effects_models.pdf" target="_blank">Xu, 2017</a>). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.</p>
 
-<p>The model first estimates an interactive fixed-effect model using only the control group data, obtaining a fixed number of latent factors using a cross-validation approach. In other words, the algorithm selects the number of latent factors, <em>k</em>, that minimizes the Mean Squared Prediction Error (MSPE). Next, the algorithm estimates factor loadings for each treated unit. Lastly, the algorithm imputes treated counterfactuals and standard errors based on the estimated factors and factor loadings. This is the step in which the $\beta$ coefficients are generated, while standard error estimates are calculated using bootstrapping techniques. These steps become much clearer once the visualizations are produced.</p>
+<p>The model first estimates an interactive fixed-effect model using only the control group data, obtaining a fixed number of latent factors using a cross-validation approach. In other words, the algorithm selects the number of latent factors, <em>k</em>, that <strong>minimizes the Mean Squared Prediction Error (MSPE)</strong>. Next, the algorithm <strong>estimates factor loadings</strong> for each treated unit. Lastly, the algorithm imputes <strong>treated counterfactuals</strong> and standard errors based on the estimated factors and factor loadings. This is the step in which the <em>β</em> coefficients are generated, while standard error estimates are calculated using bootstrapping techniques. These steps become much clearer once the visualizations are produced.</p>
 
 <h2 id="case-study-the-test-optional-movement">Case Study: The Test-Optional Movement</h2>
 
@@ -607,7 +607,7 @@
 </tr>
 
 <tr>
-<td>2017</td>
+<td>2018</td>
 <td>367546</td>
 <td>1</td>
 <td>0.24</td>
@@ -616,7 +616,7 @@
 </tr>
 
 <tr>
-<td>2017</td>
+<td>2018</td>
 <td>485656</td>
 <td>1</td>
 <td>0.43</td>
@@ -625,7 +625,7 @@
 </tr>
 
 <tr>
-<td>2017</td>
+<td>2018</td>
 <td>324635</td>
 <td>0</td>
 <td>0.13</td>
@@ -635,7 +635,7 @@
 </tbody>
 </table>
 
-<p>Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the Integrated Postsecondary Education Data System (IPEDS). Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors.</p>
+<p>Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the <a href="https://nces.ed.gov/ipeds/" target="_blank">Integrated Postsecondary Education Data System (IPEDS)</a>. Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors. However, I do include controls for institutional quality (acceptance rate, yield rate) and other measures that can influence postsecondary choice (tuition, avg. grant, enrollment).</p>
 
 <h3 id="running-the-algorithm">Running the Algorithm</h3>
 
@@ -717,7 +717,7 @@
 
 <p>These visualizations display the $\beta$ coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region.</p>
 
-<p>While the URM model is a bit nosier than the Pell model, we can still find significant treatment effects in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time t – 2, where the null hypothesis that $\beta = 0$ falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.</p>
+<p>While the URM model is a bit nosier than the Pell model, we can still find significant treatment effects in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time <em>t</em> – 2, where the null hypothesis that <em>β</em> = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.</p>
 
 <h2 id="conclusions">Conclusions</h2>
 
