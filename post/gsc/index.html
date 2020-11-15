@@ -533,7 +533,7 @@
 
 <h1 id="the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data">The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</h1>
 
-<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
+<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach <strong>utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units</strong>. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
 
 <h2 id="why-generalized-synthetic-control">Why Generalized Synthetic Control?</h2>
 
@@ -551,7 +551,7 @@
 
 <p>Though most institutions who adopt this test-optional framework are under Private control, the Public sector has seen an increase in dropping test-requirements amidst the coronavirus pandemic. With the closing of many test-centers, many institutions are shifting away from the testing requirements in the 2021 admissions cycle. Given the uncertainty of the pandemic, however, it is possible that these policies may last longer than just one year. Using the Generalized Synthetic Control method, I can examine the post-implementation effects of this policy on low-income and minority enrollment.</p>
 
-<p>The theoretical framework claims that less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself. Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method.</p>
+<p>The theoretical framework claims that <strong>less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself.</strong> Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method. Be sure to follow along using my replication code, available <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
 
 <h3 id="dataset">Dataset</h3>
 
@@ -705,19 +705,19 @@
 
 <p>In short, I find that dropping the test-requirement is associated with roughly a 2-percentage point increase in both first-time Pell enrollment and underrepresented minority enrollment. These results are significant at the 99.9% confidence interval with standard errors based on 2,500 parametric bootstraps blocked at the institution level.</p>
 
-<p>A visualization of this algorithm is displayed below. The AUC between the treated (solid) and counterfactual (dashed) lines represent the beta estimate of the independent variable of interest (the policy-change). Note that we have less data on the Pell treated and counterfactual averages since this variable did not become available in the IPEDS universe until 2008.</p>
+<p>A visualization of this algorithm is displayed below. <strong>The AUC between the treated (solid) and counterfactual (dashed) lines represent the beta estimate of the independent variable of interest (the policy-change)</strong>. Note that we have less data on the Pell treated and counterfactual averages since this variable did not become available in the IPEDS universe until 2008.</p>
 
 <p><img src="tca.png" alt="" /></p>
 
-<p>The visualization above helps tremendously to explain how the Generalized Synthetic Control algorithm works. It uses factor loadings to match “treated” institutions with “control” institutions prior to treatment, so we can see where the control group would end up had they implemented the policy. In my experience as an econometrician, I believe the GSC algorithm creates a far more accurate measure of treatment effects than diff-in-diff or two-way fixed effects could by utilizing these factor weights and matching scores.</p>
+<p>The visualization above helps tremendously to explain how the Generalized Synthetic Control algorithm works. It uses factor loadings to match “treated” institutions with “control” institutions prior to treatment, so <strong>we can see where the control group would end up had they implemented the policy</strong>. In my experience as an econometrician, I believe the GSC algorithm creates a far more accurate measure of treatment effects than diff-in-diff or two-way fixed effects could by utilizing these factor weights and matching scores.</p>
 
-<p>Further, we can investigate the average treatment effects on the institutions with the test-optional policy by period:</p>
+<p>Further, we can investigate the <strong>average treatment effects</strong> on the institutions with the test-optional policy by period:</p>
 
 <p><img src="att.png" alt="" /></p>
 
-<p>These visualizations display the $\beta$ coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region.</p>
+<p>These visualizations display the <em>β</em> coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region.</p>
 
-<p>While the URM model is a bit nosier than the Pell model, we can still find significant treatment effects in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time <em>t</em> – 2, where the null hypothesis that <em>β</em> = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.</p>
+<p>While the URM model is a bit nosier than the Pell model, we can still find <strong>significant treatment effects</strong> in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time <em>t</em> – 2, where the null hypothesis that <em>β</em> = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.</p>
 
 <h2 id="conclusions">Conclusions</h2>
 
