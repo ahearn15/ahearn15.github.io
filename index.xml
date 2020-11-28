@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adam Hearn</title>
-    <link>https://achearn.com/</link>
-      <atom:link href="https://achearn.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Adam Hearn</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Adam Hearn</title>
-      <link>https://achearn.com/</link>
+      <link>/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://achearn.com/courses/example/example1/</link>
+      <link>/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://achearn.com/courses/example/example1/</guid>
+      <guid>/courses/example/example1/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>https://achearn.com/courses/example/example2/</link>
+      <link>/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://achearn.com/courses/example/example2/</guid>
+      <guid>/courses/example/example2/</guid>
       <description>
 
 &lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
@@ -84,17 +84,17 @@
     
     <item>
       <title>Skills</title>
-      <link>https://achearn.com/skills/</link>
+      <link>/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/skills/</guid>
+      <guid>/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example Talk</title>
-      <link>https://achearn.com/talk/example/</link>
+      <link>/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://achearn.com/talk/example/</guid>
+      <guid>/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -115,9 +115,9 @@
     
     <item>
       <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
-      <link>https://achearn.com/post/gsc/</link>
+      <link>/post/gsc/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/post/gsc/</guid>
+      <guid>/post/gsc/</guid>
       <description>
 
 &lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
@@ -314,15 +314,15 @@
 
 &lt;p&gt;In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;five_hundred.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;five_hundred.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here, we increase the number of bootstraps from 500 to 1000:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;one_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;one_thousand.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And lastly, just to drive the point home, here&amp;rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;two_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;two_thousand.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.&lt;/p&gt;
 
@@ -334,39 +334,39 @@
     
     <item>
       <title>Isolating the Mechanisms Behind the Test-Optional Admissions Policy</title>
-      <link>https://achearn.com/project/to/</link>
+      <link>/project/to/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/to/</guid>
+      <guid>/project/to/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;The test-optional admissions policy is a growing tactic among four-year postsecondary institutions in the United States. While each institution decides individually whether or not to implement this policy, there has been little research done in evaluating these collective decisions across colleges and universities. By using machine learning algorithms across a range of institutions, I am able to uncover trends across schools that shine a light on why institutions may be heading in this direction. I find that the motives for implementing this policy may be different depending on the selectivity of the school.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
 </description>
     </item>
     
     <item>
       <title>Everyone Wants to Win: Even the Admissions Officers</title>
-      <link>https://achearn.com/project/sensem/</link>
+      <link>/project/sensem/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/sensem/</guid>
+      <guid>/project/sensem/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;Beginning each year around August, prospective college-goers begin filling out their applications to send off to institutions where they may end up for the next four years. The elements that go into this decision include the academic quality of the institution, the campus climate, and for some, the athletic successes the school has achieved in previous years. My research focuses on the last of these elements, as I assessed how collegiate athletics at the highest level impact postsecondary institutional metrics. In doing so, I found significant evidence that football success leads to increased applications, first-year enrollment, and reported SAT scores.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
 </description>
     </item>
     
     <item>
       <title>Using NCAA Track Data as a Predictor for Race Times</title>
-      <link>https://achearn.com/project/tfrrs/</link>
+      <link>/project/tfrrs/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/project/tfrrs/</guid>
+      <guid>/project/tfrrs/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -1095,9 +1095,9 @@ www.fetcheveryone.com/marathonprediction.&lt;/p&gt;
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>https://achearn.com/publication/preprint/</link>
+      <link>/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/preprint/</guid>
+      <guid>/publication/preprint/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
@@ -1110,9 +1110,9 @@ www.fetcheveryone.com/marathonprediction.&lt;/p&gt;
     
     <item>
       <title>Slides</title>
-      <link>https://achearn.com/slides/example/</link>
+      <link>/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/slides/example/</guid>
+      <guid>/slides/example/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
@@ -1290,10 +1290,28 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>An example journal article</title>
-      <link>https://achearn.com/publication/journal-article/</link>
+      <link>/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/journal-article/</guid>
+      <guid>/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -1312,9 +1330,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>An example conference paper</title>
-      <link>https://achearn.com/publication/conference-paper/</link>
+      <link>/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/publication/conference-paper/</guid>
+      <guid>/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

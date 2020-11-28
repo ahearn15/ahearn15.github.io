@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Adam Hearn</title>
-    <link>https://achearn.com/post/</link>
-      <atom:link href="https://achearn.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Posts</title>
-      <link>https://achearn.com/post/</link>
+      <link>/post/</link>
     </image>
     
     <item>
       <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
-      <link>https://achearn.com/post/gsc/</link>
+      <link>/post/gsc/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/post/gsc/</guid>
+      <guid>/post/gsc/</guid>
       <description>
 
 &lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
@@ -213,15 +213,15 @@
 
 &lt;p&gt;In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;five_hundred.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;five_hundred.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here, we increase the number of bootstraps from 500 to 1000:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;one_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;one_thousand.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And lastly, just to drive the point home, here&amp;rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;two_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;two_thousand.gif&#34; style=&#34;zoom:125%;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.&lt;/p&gt;
 
