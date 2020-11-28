@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Adam Hearn</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://achearn.com/post/</link>
+      <atom:link href="https://achearn.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://achearn.com/img/icon-192.png</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://achearn.com/post/</link>
     </image>
     
     <item>
       <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
-      <link>/post/gsc/</link>
+      <link>https://achearn.com/post/gsc/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/post/gsc/</guid>
+      <guid>https://achearn.com/post/gsc/</guid>
       <description>
 
 &lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
@@ -25,7 +25,7 @@
 
 &lt;h2 id=&#34;why-generalized-synthetic-control&#34;&gt;Why Generalized Synthetic Control?&lt;/h2&gt;
 
-&lt;p&gt;The fundamental challenge of causal inference is the parallel trends assumption. To quote &lt;a href=&#34;https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf&#34; target=&#34;_blank&#34;&gt;Angrist and Pischke (2009)&lt;/a&gt;, two-way fixed effects models produce non-biased, causal estimates only in &lt;strong&gt;“parallel worlds.”&lt;/strong&gt; This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had **&lt;em&gt;not&lt;/em&gt; **attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.&lt;/p&gt;
+&lt;p&gt;The fundamental challenge of causal inference is the parallel trends assumption. To quote &lt;a href=&#34;https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf&#34; target=&#34;_blank&#34;&gt;Angrist and Pischke (2009)&lt;/a&gt;, two-way fixed effects models produce non-biased, causal estimates only in &lt;strong&gt;“parallel worlds.”&lt;/strong&gt; This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had &lt;strong&gt;not&lt;/strong&gt; attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.&lt;/p&gt;
 
 &lt;h2 id=&#34;what-is-generalized-synthetic-control&#34;&gt;What is Generalized Synthetic Control?&lt;/h2&gt;
 
@@ -203,9 +203,27 @@
 
 &lt;p&gt;&lt;img src=&#34;att.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;These visualizations display the &lt;em&gt;β&lt;/em&gt; coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region.&lt;/p&gt;
+&lt;p&gt;These visualizations display the &lt;em&gt;β&lt;/em&gt; coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region. While the URM model is a bit nosier than the Pell model, we can still find &lt;strong&gt;significant treatment effects&lt;/strong&gt; in years 3 and 4 after policy implementation.&lt;/p&gt;
 
-&lt;p&gt;While the URM model is a bit nosier than the Pell model, we can still find &lt;strong&gt;significant treatment effects&lt;/strong&gt; in years 3 and 4 after policy implementation. The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time &lt;em&gt;t&lt;/em&gt; – 2, where the null hypothesis that &lt;em&gt;β&lt;/em&gt; = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.&lt;/p&gt;
+&lt;p&gt;The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time &lt;em&gt;t&lt;/em&gt; – 2, where the null hypothesis that &lt;em&gt;β&lt;/em&gt; = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.&lt;/p&gt;
+
+&lt;h4 id=&#34;bootstrapped-standard-errors-visualization&#34;&gt;Bootstrapped Standard Errors Visualization&lt;/h4&gt;
+
+&lt;p&gt;The area in the shaded region, the uncertainty estimates (aka the 95% confidence interval), change depending on the number of bootstraps. &lt;strong&gt;Bootstrapping is a data science method of resampling such that we eliminate sampling error in our estimates&lt;/strong&gt;. As we increase the number of bootstraps, the uncertainty estimates begin to stagnate. These are illustrated in the GIFS below.&lt;/p&gt;
+
+&lt;p&gt;In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;five_hundred.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, we increase the number of bootstraps from 500 to 1000:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;one_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And lastly, just to drive the point home, here&amp;rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;two_thousand.gif&#34; style=&#34;zoom:100%;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
 
