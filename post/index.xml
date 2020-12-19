@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Adam Hearn</title>
-    <link>https://achearn.com/post/</link>
-      <atom:link href="https://achearn.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://achearn.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Posts</title>
-      <link>https://achearn.com/post/</link>
+      <link>/post/</link>
     </image>
     
     <item>
       <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
-      <link>https://achearn.com/post/gsc/</link>
+      <link>/post/gsc/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://achearn.com/post/gsc/</guid>
+      <guid>/post/gsc/</guid>
       <description>
 
 &lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
