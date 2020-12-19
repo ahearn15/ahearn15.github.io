@@ -2,44 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Academic | Adam Hearn</title>
-    <link>/tags/academic/</link>
-      <atom:link href="/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://achearn.com/tags/academic/</link>
+      <atom:link href="https://achearn.com/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://achearn.com/img/icon-192.png</url>
       <title>Academic</title>
-      <link>/tags/academic/</link>
+      <link>https://achearn.com/tags/academic/</link>
     </image>
     
     <item>
       <title>Do institutions serve their geographic constituents? Evidence from student migratory patterns</title>
-      <link>/project/migration/</link>
+      <link>https://achearn.com/project/migration/</link>
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/project/migration/</guid>
-      <description></description>
+      <guid>https://achearn.com/project/migration/</guid>
+      <description>&lt;p&gt;This RShiny web-app provides a resource for higher-ed stakeholders and researchers to investigate migration patterns of postsecondary learners.&lt;/p&gt;
+
+&lt;p&gt;To enter the portal, click here: &lt;a href=&#34;https://adam-c-hearn.shinyapps.io/geo_ipeds//&#34; target=&#34;_blank&#34;&gt;https://adam-c-hearn.shinyapps.io/geo_ipeds//&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>The Higher-Ed Coronavirus Response in the Public Sector</title>
-      <link>/project/ds3/</link>
+      <link>https://achearn.com/project/ds3/</link>
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/project/ds3/</guid>
+      <guid>https://achearn.com/project/ds3/</guid>
       <description>
 
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;Using a combination of data from the College Crisis Initiative (C2i), the Integrated Postsecondary Data System (IPEDS), and CDC coronavirus statistics, this paper investigates the factors which play significant roles in predicting Fall 2020 mode of instruction in the public, 4-year sector of higher education. Using principal components analysis (PCA), I am able to scale down nearly 30 institutional features to a handful of orthogonal vectors while maintaining relatively high predictive accuracy. Further, I find that the primary factors in predicting in-person instruction were state political leaning and intercollegiate athletics.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/highered_covid.pdf&#34;&gt;here.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/highered_covid.pdf&#34;&gt;here.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
-      <link>/post/gsc/</link>
+      <link>https://achearn.com/post/gsc/</link>
       <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/post/gsc/</guid>
+      <guid>https://achearn.com/post/gsc/</guid>
       <description>
 
 &lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
@@ -256,31 +259,31 @@
     
     <item>
       <title>Isolating the Mechanisms Behind the Test-Optional Admissions Policy</title>
-      <link>/project/to/</link>
+      <link>https://achearn.com/project/to/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
-      <guid>/project/to/</guid>
+      <guid>https://achearn.com/project/to/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;The test-optional admissions policy is a growing tactic among four-year postsecondary institutions in the United States. While each institution decides individually whether or not to implement this policy, there has been little research done in evaluating these collective decisions across colleges and universities. By using machine learning algorithms across a range of institutions, I am able to uncover trends across schools that shine a light on why institutions may be heading in this direction. I find that the motives for implementing this policy may be different depending on the selectivity of the school.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-test-optional-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
 </description>
     </item>
     
     <item>
       <title>Everyone Wants to Win: Even the Admissions Officers</title>
-      <link>/project/sensem/</link>
+      <link>https://achearn.com/project/sensem/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/project/sensem/</guid>
+      <guid>https://achearn.com/project/sensem/</guid>
       <description>
 
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;Beginning each year around August, prospective college-goers begin filling out their applications to send off to institutions where they may end up for the next four years. The elements that go into this decision include the academic quality of the institution, the campus climate, and for some, the athletic successes the school has achieved in previous years. My research focuses on the last of these elements, as I assessed how collegiate athletics at the highest level impact postsecondary institutional metrics. In doing so, I found significant evidence that football success leads to increased applications, first-year enrollment, and reported SAT scores.&lt;/p&gt;
 
-&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-here-files-research-hearn-april-20-pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://achearn.com/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
 </description>
     </item>
     
