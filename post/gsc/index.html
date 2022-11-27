@@ -31,7 +31,7 @@
   <meta name="description" content="This post will cover the Generalized Synthetic Control method, a ML algorithm that is lesser known within Data Science circles.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/gsc/">
+  <link rel="alternate" hreflang="en-us" href="https://www.achearn.com/post/gsc/">
 
   
 
@@ -98,7 +98,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/gsc/">
+  <link rel="canonical" href="https://www.achearn.com/post/gsc/">
 
   
   
@@ -110,10 +110,10 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Hearn">
-  <meta property="og:url" content="/post/gsc/">
+  <meta property="og:url" content="https://www.achearn.com/post/gsc/">
   <meta property="og:title" content="The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data | Adam Hearn">
-  <meta property="og:description" content="This post will cover the Generalized Synthetic Control method, a ML algorithm that is lesser known within Data Science circles."><meta property="og:image" content="/post/gsc/featured.png">
-  <meta property="twitter:image" content="/post/gsc/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="This post will cover the Generalized Synthetic Control method, a ML algorithm that is lesser known within Data Science circles."><meta property="og:image" content="https://www.achearn.com/post/gsc/featured.png">
+  <meta property="twitter:image" content="https://www.achearn.com/post/gsc/featured.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-11-15T00:00:00&#43;00:00">
@@ -144,12 +144,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/gsc/"
+    "@id": "https://www.achearn.com/post/gsc/"
   },
   "headline": "The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data",
   
   "image": [
-    "/post/gsc/featured.png"
+    "https://www.achearn.com/post/gsc/featured.png"
   ],
   
   "datePublished": "2020-11-15T00:00:00Z",
@@ -165,7 +165,7 @@
     "name": "Adam Hearn",
     "logo": {
       "@type": "ImageObject",
-      "url": "/img/icon-512.png"
+      "url": "https://www.achearn.com/img/icon-512.png"
     }
   },
   "description": "This post will cover the Generalized Synthetic Control method, a ML algorithm that is lesser known within Data Science circles."
@@ -323,6 +323,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#sports"><span>Sports</span></a>
         </li>
 
         
@@ -519,7 +548,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 449px;">
   <div style="position: relative">
-    <img src="/post/gsc/featured_hu2ae08f2f4cefa1cad1a2adc551472e0b_701049_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <img src="/post/gsc/featured_hu2ae08f2f4cefa1cad1a2adc551472e0b_701049_720x0_resize_lanczos_3.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -529,34 +558,19 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<h1 id="the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data">The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</h1>
-
-<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach <strong>utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units</strong>. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
-
+      <h1 id="the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data">The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</h1>
+<p>This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach <strong>utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units</strong>. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub <a href="https://github.com/ahearn15/ml_viz">here</a>.</p>
 <h2 id="why-generalized-synthetic-control">Why Generalized Synthetic Control?</h2>
-
-<p>The fundamental challenge of causal inference is the parallel trends assumption. To quote <a href="https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf" target="_blank">Angrist and Pischke (2009)</a>, two-way fixed effects models produce non-biased, causal estimates only in <strong>“parallel worlds.”</strong> This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had <strong>not</strong> attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.</p>
-
+<p>The fundamental challenge of causal inference is the parallel trends assumption. To quote <a href="https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf">Angrist and Pischke (2009)</a>, two-way fixed effects models produce non-biased, causal estimates only in <strong>“parallel worlds.”</strong> This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had <strong>not</strong> attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.</p>
 <h2 id="what-is-generalized-synthetic-control">What is Generalized Synthetic Control?</h2>
-
-<p>The Generalized Synthetic Control Model <strong>“imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients”</strong> (<a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B63A8BD7C239DD4141C67DA10CD0E4F3/S1047198716000024a.pdf/generalized_synthetic_control_method_causal_inference_with_interactive_fixed_effects_models.pdf" target="_blank">Xu, 2017</a>). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.</p>
-
+<p>The Generalized Synthetic Control Model <strong>“imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients”</strong> (<a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B63A8BD7C239DD4141C67DA10CD0E4F3/S1047198716000024a.pdf/generalized_synthetic_control_method_causal_inference_with_interactive_fixed_effects_models.pdf">Xu, 2017</a>). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.</p>
 <p>The model first estimates an interactive fixed-effect model using only the control group data, obtaining a fixed number of latent factors using a cross-validation approach. In other words, the algorithm selects the number of latent factors, <em>k</em>, that <strong>minimizes the Mean Squared Prediction Error (MSPE)</strong>. Next, the algorithm <strong>estimates factor loadings</strong> for each treated unit. Lastly, the algorithm imputes <strong>treated counterfactuals</strong> and standard errors based on the estimated factors and factor loadings. This is the step in which the <em>β</em> coefficients are generated, while standard error estimates are calculated using bootstrapping techniques. These steps become much clearer once the visualizations are produced.</p>
-
 <h2 id="case-study-the-test-optional-movement">Case Study: The Test-Optional Movement</h2>
-
 <p>Since 2003, institutions have increasingly begun to drop the standardized-testing requirement for admission. In the 2003-04 admission cycle, over 75% of degree-granting, 4-year institutions required either the SAT or ACT upon application. However, in 2018-19, this number had dropped to just 48.3% with institutions increasingly shifting towards a policy of neither recommending nor requiring scores.</p>
-
 <p>Though most institutions who adopt this test-optional framework are under Private control, the Public sector has seen an increase in dropping test-requirements amidst the coronavirus pandemic. With the closing of many test-centers, many institutions are shifting away from the testing requirements in the 2021 admissions cycle. Given the uncertainty of the pandemic, however, it is possible that these policies may last longer than just one year. Using the Generalized Synthetic Control method, I can examine the post-implementation effects of this policy on low-income and minority enrollment.</p>
-
-<p>The theoretical framework claims that <strong>less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself.</strong> Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method. Be sure to follow along using my replication code, available <a href="https://github.com/ahearn15/ml_viz" target="_blank">here</a>.</p>
-
+<p>The theoretical framework claims that <strong>less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself.</strong> Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method. Be sure to follow along using my replication code, available <a href="https://github.com/ahearn15/ml_viz">here</a>.</p>
 <h3 id="dataset">Dataset</h3>
-
 <p>The pre-processing of the data would be conducted just as we would if we were running a two-way fixed-effects regression with unique Year-ID pairs. In other words, we want a panel data format such as the following (note this is fake data):</p>
-
 <table>
 <thead>
 <tr>
@@ -568,7 +582,6 @@
 <th>…</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>2003</td>
@@ -578,7 +591,6 @@
 <td>0.39</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>2003</td>
 <td>485656</td>
@@ -587,7 +599,6 @@
 <td>0.45</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>2003</td>
 <td>324635</td>
@@ -596,7 +607,6 @@
 <td>0.23</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>…</td>
 <td>…</td>
@@ -605,7 +615,6 @@
 <td>..</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>2018</td>
 <td>367546</td>
@@ -614,7 +623,6 @@
 <td>0.37</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>2018</td>
 <td>485656</td>
@@ -623,7 +631,6 @@
 <td>0.67</td>
 <td>…</td>
 </tr>
-
 <tr>
 <td>2018</td>
 <td>324635</td>
@@ -634,63 +641,50 @@
 </tr>
 </tbody>
 </table>
-
-<p>Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the <a href="https://nces.ed.gov/ipeds/" target="_blank">Integrated Postsecondary Education Data System (IPEDS)</a>. Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors. However, I do include controls for institutional quality (acceptance rate, yield rate) and other measures that can influence postsecondary choice (tuition, avg. grant, enrollment).</p>
-
+<p>Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the <a href="https://nces.ed.gov/ipeds/">Integrated Postsecondary Education Data System (IPEDS)</a>. Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors. However, I do include controls for institutional quality (acceptance rate, yield rate) and other measures that can influence postsecondary choice (tuition, avg. grant, enrollment).</p>
 <h3 id="running-the-algorithm">Running the Algorithm</h3>
-
 <p>With the GSC model, I can combat the parallel trends assumption of causal inference with high-confidence uncertainty estimates. Using GSC, there needs to be a balance between the number of years an institution is in the “pre-treatment” period as well as the number of years following the implementation. The higher the minimum value of pre-treatment values set as the parameter, the less biased the results will be. However, as this value increases, the number of observations decrease. With that tradeoff in mind, I find the best balance for both models in using 6 pre-treatment periods in the Pell model and 11 pre-treatment periods in the URM model. Further, this allows for both models to be examined with four-years of post-policy implementation effects.</p>
-
 <h3 id="results">Results</h3>
-
 <p>After running the algorithm, we get the following regression output:</p>
-
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Pct. full-time first-time <br />students Pell</th>
-<th>Pct. degree-seeking first-time <br />students minority</th>
+<th>Pct. full-time first-time <!-- raw HTML omitted -->students Pell</th>
+<th>Pct. degree-seeking first-time <!-- raw HTML omitted -->students minority</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Test-optional</td>
-<td>2.166***  <br />(0.488)</td>
-<td>2.287***  <br />(0.728)</td>
+<td>2.166***  <!-- raw HTML omitted -->(0.488)</td>
+<td>2.287***  <!-- raw HTML omitted -->(0.728)</td>
 </tr>
-
 <tr>
 <td>Controls</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
-
 <tr>
 <td>Institution/year fixed effects</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
-
 <tr>
 <td>Unobserved Factors</td>
 <td>0</td>
 <td>2</td>
 </tr>
-
 <tr>
 <td>Observations</td>
 <td>1118</td>
 <td>1055</td>
 </tr>
-
 <tr>
 <td>Treated</td>
 <td>134</td>
 <td>119</td>
 </tr>
-
 <tr>
 <td>Control</td>
 <td>984</td>
@@ -698,47 +692,26 @@
 </tr>
 </tbody>
 </table>
-
 <p><em>Note:</em> Standard errors are based on parametric bootstraps (blocked at the institution level) of 2,500 times. Panel data from Title IV four-year degree-granting institutions. Years included are 2007-2017 in Column (1) and 2003-2017 in Column (2). *<em>p</em>&lt;0.05, **<em>p</em>&lt;0.01, ***<em>p</em>&lt;0.001.</p>
-
 <h3 id="result-summary">Result Summary</h3>
-
 <p>In short, I find that dropping the test-requirement is associated with roughly a 2-percentage point increase in both first-time Pell enrollment and underrepresented minority enrollment. These results are significant at the 99.9% confidence interval with standard errors based on 2,500 parametric bootstraps blocked at the institution level.</p>
-
 <p>A visualization of this algorithm is displayed below. <strong>The AUC between the treated (solid) and counterfactual (dashed) lines represent the beta estimate of the independent variable of interest (the policy-change)</strong>. Note that we have less data on the Pell treated and counterfactual averages since this variable did not become available in the IPEDS universe until 2008.</p>
-
-<p><img src="tca.png" alt="" /></p>
-
+<p><img src="tca.png" alt=""></p>
 <p>The visualization above helps tremendously to explain how the Generalized Synthetic Control algorithm works. It uses factor loadings to match “treated” institutions with “control” institutions prior to treatment, so <strong>we can see where the control group would end up had they implemented the policy</strong>. In my experience as an econometrician, I believe the GSC algorithm creates a far more accurate measure of treatment effects than diff-in-diff or two-way fixed effects could by utilizing these factor weights and matching scores.</p>
-
 <p>Further, we can investigate the <strong>average treatment effects</strong> on the institutions with the test-optional policy by period:</p>
-
-<p><img src="att.png" alt="" /></p>
-
+<p><img src="att.png" alt=""></p>
 <p>These visualizations display the <em>β</em> coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region. While the URM model is a bit noisier than the Pell model, we can still find <strong>significant treatment effects</strong> in years 3 and 4 after policy implementation.</p>
-
 <p>The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time <em>t</em> – 2, where the null hypothesis that <em>β</em> = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.</p>
-
 <h4 id="bootstrapped-standard-errors-visualization">Bootstrapped Standard Errors Visualization</h4>
-
 <p>The area in the shaded region, the uncertainty estimates (aka the 95% confidence interval), change depending on the number of bootstraps. <strong>Bootstrapping is a data science method of resampling such that we eliminate sampling error in our estimates</strong>. As we increase the number of bootstraps, the uncertainty estimates begin to stagnate. These are illustrated in the GIFS below.</p>
-
 <p>In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:</p>
-
-<p><img src="five_hundred.gif" style="zoom:125%;" /></p>
-
+<!-- raw HTML omitted -->
 <p>Here, we increase the number of bootstraps from 500 to 1000:</p>
-
-<p><img src="one_thousand.gif" style="zoom:125%;" /></p>
-
+<!-- raw HTML omitted -->
 <p>And lastly, just to drive the point home, here&rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):</p>
-
-<p><img src="two_thousand.gif" style="zoom:125%;" /></p>
-
+<!-- raw HTML omitted -->
 <p>These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.</p>
-
 <h2 id="conclusions">Conclusions</h2>
-
 <p>The generalized synthetic control method is a wonderful supervised-learning approach to produce counterfactual estimates, eliminating much of the confoundedness found in OLS and Fixed-Effects regression techniques. Further, the algorithm allows you to produce beautiful visualizations that aid tremendously in explaining how the algorithm works to a non-technical audience.</p>
 
     </div>
@@ -768,7 +741,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/gsc/&amp;text=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://www.achearn.com/post/gsc/&amp;text=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -781,7 +754,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/gsc/&amp;t=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.achearn.com/post/gsc/&amp;t=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -794,7 +767,7 @@
       
       
       <li>
-        <a href="mailto:?subject=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data&amp;body=/post/gsc/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data&amp;body=https://www.achearn.com/post/gsc/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -807,7 +780,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/gsc/&amp;title=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://www.achearn.com/post/gsc/&amp;title=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -820,7 +793,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data%20/post/gsc/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data%20https://www.achearn.com/post/gsc/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -833,7 +806,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/gsc/&amp;title=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://www.achearn.com/post/gsc/&amp;title=The%20Generalized%20Synthetic%20Control%20Method:%20A%20Powerful%20ML%20Algorithm%20to%20Produce%20Counterfactual%20Estimates%20for%20Experimental%20Data" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -872,7 +845,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="/">Adam Hearn</a></h5>
+      <h5 class="card-title"><a href="https://www.achearn.com">Adam Hearn</a></h5>
       <h6 class="card-subtitle">Data Scientist, Researcher, Higher-Education Advocate</h6>
       <p class="card-text">I am a Data Scientist at the American Institutes for Research, one of the world&rsquo;s largest non-profit social science research centers.</p>
       <ul class="network-icon" aria-hidden="true">
@@ -1055,7 +1028,7 @@
     
     
     
-    <script src="/js/academic.min.e8215ca28db30837697c25157aaa8c54.js"></script>
+    <script src="/js/academic.min.2889c0466a1e578f722a7afcedc88412.js"></script>
 
     
 
@@ -1068,16 +1041,6 @@
   
   <div class="container">
     <footer class="site-footer">
-  
-  <p class="powered-by">
-    
-      <a href="/privacy/">Privacy Policy</a>
-    
-    
-       &middot; 
-      <a href="/terms/">Terms</a>
-    
-  </p>
   
 
   <p class="powered-by">
