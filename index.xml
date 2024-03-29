@@ -79,25 +79,22 @@
     </item>
     
     <item>
-      <title>MLB Picks</title>
+      <title>MLB Picks and Predictions</title>
       <link>https://www.achearn.com/sports/mlb/</link>
       <pubDate>Thu, 28 Mar 2024 14:35:33 +0000</pubDate>
       <guid>https://www.achearn.com/sports/mlb/</guid>
-      <description>&lt;h2 id=&#34;mlb-model&#34;&gt;MLB Model&lt;/h2&gt;
-&lt;p&gt;This site provided MLB predictions based on player-level data that incorporates batters, pitchers, starting lineups, travel, ballpark factors, weather, and more. An XGBoost algorithm was conducted to train the model on 2023 data (over 2000 games) with hyperparameters tuned to maximize ROI. Among these hyperparameters is bet strategy. To maximize ROI, the model suggests not betting on teams with odds lower than -200 or higher than +200, and to only bet on picks with above a 6% EV.&lt;/p&gt;
-&lt;p&gt;Backtesting for the 2023 season yielded a 10.58% ROI. An official technical paper on the methodology is coming soon.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vQcWo1V381Gsrz2cDoVVOriYtJ_jKZ57nd0BoL-vVNXS4YVLqqoxAFXO0jyYkXWU27YDvdgSEAI5Dz7/pubhtml?widget=true&amp;amp;amp;headers=false&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&lt;/iframe&gt;
+      <description>&lt;p&gt;This site provides MLB predictions based on player-level data that incorporates batters, pitchers, starting lineups, travel, ballpark factors, weather, and more. An XGBoost algorithm was conducted to train the model on 2023 data (4,860 games and 2,140 features) with hyperparameters tuned to maximize ROI. Among these hyperparameters is bet strategy. To maximize ROI, the model suggests not betting on teams with odds lower than -200 or higher than +200, and to only bet on picks with above a 6% EV.&lt;/p&gt;
+&lt;p&gt;Backtesting for the 2023 season using 10-fold cross validation yielded a 10.58% ROI. An official technical post on the training methodology is coming soon.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 </description>
     </item>
     
     <item>
-      <title>NBA Picks</title>
+      <title>NBA Picks and Predictions</title>
       <link>https://www.achearn.com/sports/nba/</link>
       <pubDate>Fri, 09 Dec 2022 14:35:33 +0000</pubDate>
       <guid>https://www.achearn.com/sports/nba/</guid>
-      <description>&lt;h2 id=&#34;nba-model&#34;&gt;NBA Model&lt;/h2&gt;
-&lt;p&gt;NBA model coming soon!&lt;/p&gt;
+      <description>&lt;p&gt;Public NBA model coming soon!&lt;/p&gt;
 </description>
     </item>
     
@@ -1021,6 +1018,24 @@ $$&lt;/p&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://www.achearn.com/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://www.achearn.com/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://www.achearn.com/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://www.achearn.com/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
