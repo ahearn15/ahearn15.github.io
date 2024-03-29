@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam Hearn</title>
+    <link>https://www.achearn.com/</link>
+      <atom:link href="https://www.achearn.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adam Hearn</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.achearn.com/img/icon-192.png</url>
+      <title>Adam Hearn</title>
+      <link>https://www.achearn.com/</link>
+    </image>
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>https://www.achearn.com/courses/example/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://www.achearn.com/courses/example/example1/</guid>
+      <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>https://www.achearn.com/courses/example/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://www.achearn.com/courses/example/example2/</guid>
+      <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>https://www.achearn.com/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://www.achearn.com/talk/example/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/talk/example/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MLB Picks</title>
+      <link>https://www.achearn.com/sports/mlb/</link>
+      <pubDate>Thu, 28 Mar 2024 14:35:33 +0000</pubDate>
+      <guid>https://www.achearn.com/sports/mlb/</guid>
+      <description>&lt;h2 id=&#34;mlb-model&#34;&gt;MLB Model&lt;/h2&gt;
+&lt;p&gt;This site provided MLB predictions based on player-level data that incorporates batters, pitchers, starting lineups, travel, ballpark factors, weather, and more. An XGBoost algorithm was conducted to train the model on 2023 data (over 2000 games) with hyperparameters tuned to maximize ROI. Among these hyperparameters is bet strategy. To maximize ROI, the model suggests not betting on teams with odds lower than -200 or higher than +200, and to only bet on picks with above a 6% EV.&lt;/p&gt;
+&lt;p&gt;Backtesting for the 2023 season yielded a 10.58% ROI. An official technical paper on the methodology is coming soon.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vQcWo1V381Gsrz2cDoVVOriYtJ_jKZ57nd0BoL-vVNXS4YVLqqoxAFXO0jyYkXWU27YDvdgSEAI5Dz7/pubhtml?widget=true&amp;amp;amp;headers=false&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBA Picks</title>
+      <link>https://www.achearn.com/sports/nba/</link>
+      <pubDate>Fri, 09 Dec 2022 14:35:33 +0000</pubDate>
+      <guid>https://www.achearn.com/sports/nba/</guid>
+      <description>&lt;h2 id=&#34;nba-model&#34;&gt;NBA Model&lt;/h2&gt;
+&lt;p&gt;NBA model coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Do institutions serve their geographic constituents? Evidence from student migratory patterns</title>
+      <link>https://www.achearn.com/project/migration/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/project/migration/</guid>
+      <description>&lt;p&gt;This RShiny web-app provides a resource for higher-ed stakeholders and researchers to investigate migration patterns of postsecondary learners.&lt;/p&gt;
+&lt;p&gt;To enter the portal, click here: &lt;a href=&#34;https://adam-c-hearn.shinyapps.io/geo_ipeds//&#34;&gt;https://adam-c-hearn.shinyapps.io/geo_ipeds//&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Higher-Ed Coronavirus Response in the Public Sector</title>
+      <link>https://www.achearn.com/project/ds3/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/project/ds3/</guid>
+      <description>&lt;h2 id=&#34;nba-model&#34;&gt;NBA Model&lt;/h2&gt;
+&lt;p&gt;This website provides NBA picks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data</title>
+      <link>https://www.achearn.com/post/gsc/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/post/gsc/</guid>
+      <description>&lt;h1 id=&#34;the-generalized-synthetic-control-method-a-powerful-ml-algorithm-to-produce-counterfactual-estimates-for-experimental-data&#34;&gt;The Generalized Synthetic Control Method: A Powerful ML Algorithm to Produce Counterfactual Estimates for Experimental Data&lt;/h1&gt;
+&lt;p&gt;This post will cover the Generalized Synthetic Control method, a machine-learning algorithm that is lesser known within Data Science circles. Though this method is not often talked about, this quasi-experimental approach &lt;strong&gt;utilizes a robust latent-factor approach to synthetically produce counterfactuals for treated units&lt;/strong&gt;. As a result, we can gather coefficient estimates and standard errors to assess and evaluate treatment effects of policy interventions. A policy-relevant example using this method will be provided, with replication code available from my GitHub &lt;a href=&#34;https://github.com/ahearn15/ml_viz&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-generalized-synthetic-control&#34;&gt;Why Generalized Synthetic Control?&lt;/h2&gt;
+&lt;p&gt;The fundamental challenge of causal inference is the parallel trends assumption. To quote &lt;a href=&#34;https://mycourses.aalto.fi/pluginfile.php/203124/mod_resource/content/1/Angrist%20%20Pischke.pdf&#34;&gt;Angrist and Pischke (2009)&lt;/a&gt;, two-way fixed effects models produce non-biased, causal estimates only in &lt;strong&gt;“parallel worlds.”&lt;/strong&gt; This is a strong assumption to consider, as the unobserved counterfactual can rarely be produced using real data. For example, as a graduate student studying Data Science for Public Policy, it is impossible to know my post-graduation salary if I had &lt;strong&gt;not&lt;/strong&gt; attended graduate school. Luckily, we can rely on a combination of econometrics and machine learning to produce these counterfactual estimates while eliminating many of the confounding variables that may bias the typical difference-in-difference or fixed-effects regression models. This is where we turn to the Generalized Synthetic Control model.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-generalized-synthetic-control&#34;&gt;What is Generalized Synthetic Control?&lt;/h2&gt;
+&lt;p&gt;The Generalized Synthetic Control Model &lt;strong&gt;“imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients”&lt;/strong&gt; (&lt;a href=&#34;https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B63A8BD7C239DD4141C67DA10CD0E4F3/S1047198716000024a.pdf/generalized_synthetic_control_method_causal_inference_with_interactive_fixed_effects_models.pdf&#34;&gt;Xu, 2017&lt;/a&gt;). Essentially, this supervised learning technique combines the interactive fixed-effects model and the synthetic control model, while employing a latent factor approach to provide valid, simulation-based uncertainty estimates.&lt;/p&gt;
+&lt;p&gt;The model first estimates an interactive fixed-effect model using only the control group data, obtaining a fixed number of latent factors using a cross-validation approach. In other words, the algorithm selects the number of latent factors, &lt;em&gt;k&lt;/em&gt;, that &lt;strong&gt;minimizes the Mean Squared Prediction Error (MSPE)&lt;/strong&gt;. Next, the algorithm &lt;strong&gt;estimates factor loadings&lt;/strong&gt; for each treated unit. Lastly, the algorithm imputes &lt;strong&gt;treated counterfactuals&lt;/strong&gt; and standard errors based on the estimated factors and factor loadings. This is the step in which the &lt;em&gt;β&lt;/em&gt; coefficients are generated, while standard error estimates are calculated using bootstrapping techniques. These steps become much clearer once the visualizations are produced.&lt;/p&gt;
+&lt;h2 id=&#34;case-study-the-test-optional-movement&#34;&gt;Case Study: The Test-Optional Movement&lt;/h2&gt;
+&lt;p&gt;Since 2003, institutions have increasingly begun to drop the standardized-testing requirement for admission. In the 2003-04 admission cycle, over 75% of degree-granting, 4-year institutions required either the SAT or ACT upon application. However, in 2018-19, this number had dropped to just 48.3% with institutions increasingly shifting towards a policy of neither recommending nor requiring scores.&lt;/p&gt;
+&lt;p&gt;Though most institutions who adopt this test-optional framework are under Private control, the Public sector has seen an increase in dropping test-requirements amidst the coronavirus pandemic. With the closing of many test-centers, many institutions are shifting away from the testing requirements in the 2021 admissions cycle. Given the uncertainty of the pandemic, however, it is possible that these policies may last longer than just one year. Using the Generalized Synthetic Control method, I can examine the post-implementation effects of this policy on low-income and minority enrollment.&lt;/p&gt;
+&lt;p&gt;The theoretical framework claims that &lt;strong&gt;less-privileged students may find more difficulty in both preparing for standardized tests and taking the test itself.&lt;/strong&gt; Meanwhile, students who come from a more affluent background have greater access to both test-preparation and test-taking. By removing the burden of standardized test taking, the playing field can be more leveled regarding this aspect of the application. As a result, postsecondary access may become less challenging for underrepresented students. We can test this framework using the Generalized Synthetic Control method. Be sure to follow along using my replication code, available &lt;a href=&#34;https://github.com/ahearn15/ml_viz&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;dataset&#34;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;The pre-processing of the data would be conducted just as we would if we were running a two-way fixed-effects regression with unique Year-ID pairs. In other words, we want a panel data format such as the following (note this is fake data):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;UnitID&lt;/th&gt;
+&lt;th&gt;Test-Optional?&lt;/th&gt;
+&lt;th&gt;Pct. Pell Enrollment&lt;/th&gt;
+&lt;th&gt;Pct. Minority Enrollment&lt;/th&gt;
+&lt;th&gt;…&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;367546&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.13&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;485656&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;td&gt;0.45&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;324635&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.09&lt;/td&gt;
+&lt;td&gt;0.23&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;td&gt;..&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;367546&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.24&lt;/td&gt;
+&lt;td&gt;0.37&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;485656&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0.43&lt;/td&gt;
+&lt;td&gt;0.67&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;324635&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0.13&lt;/td&gt;
+&lt;td&gt;0.25&lt;/td&gt;
+&lt;td&gt;…&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Once we have the data in this format, we’re ready to run the model. I’ll be conducting this algorithm with a sample of over 1000 4-year colleges and universities with data from the &lt;a href=&#34;https://nces.ed.gov/ipeds/&#34;&gt;Integrated Postsecondary Education Data System (IPEDS)&lt;/a&gt;. Since the algorithm automatically selects the number of latent factors that minimize MSPE, we do not need to worry as much about control variables as these will be captured in the latent factors. However, I do include controls for institutional quality (acceptance rate, yield rate) and other measures that can influence postsecondary choice (tuition, avg. grant, enrollment).&lt;/p&gt;
+&lt;h3 id=&#34;running-the-algorithm&#34;&gt;Running the Algorithm&lt;/h3&gt;
+&lt;p&gt;With the GSC model, I can combat the parallel trends assumption of causal inference with high-confidence uncertainty estimates. Using GSC, there needs to be a balance between the number of years an institution is in the “pre-treatment” period as well as the number of years following the implementation. The higher the minimum value of pre-treatment values set as the parameter, the less biased the results will be. However, as this value increases, the number of observations decrease. With that tradeoff in mind, I find the best balance for both models in using 6 pre-treatment periods in the Pell model and 11 pre-treatment periods in the URM model. Further, this allows for both models to be examined with four-years of post-policy implementation effects.&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;After running the algorithm, we get the following regression output:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Pct. full-time first-time &lt;!-- raw HTML omitted --&gt;students Pell&lt;/th&gt;
+&lt;th&gt;Pct. degree-seeking first-time &lt;!-- raw HTML omitted --&gt;students minority&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Test-optional&lt;/td&gt;
+&lt;td&gt;2.166***  &lt;!-- raw HTML omitted --&gt;(0.488)&lt;/td&gt;
+&lt;td&gt;2.287***  &lt;!-- raw HTML omitted --&gt;(0.728)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Controls&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Institution/year fixed effects&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unobserved Factors&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Observations&lt;/td&gt;
+&lt;td&gt;1118&lt;/td&gt;
+&lt;td&gt;1055&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Treated&lt;/td&gt;
+&lt;td&gt;134&lt;/td&gt;
+&lt;td&gt;119&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;984&lt;/td&gt;
+&lt;td&gt;936&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Standard errors are based on parametric bootstraps (blocked at the institution level) of 2,500 times. Panel data from Title IV four-year degree-granting institutions. Years included are 2007-2017 in Column (1) and 2003-2017 in Column (2). *&lt;em&gt;p&lt;/em&gt;&amp;lt;0.05, **&lt;em&gt;p&lt;/em&gt;&amp;lt;0.01, ***&lt;em&gt;p&lt;/em&gt;&amp;lt;0.001.&lt;/p&gt;
+&lt;h3 id=&#34;result-summary&#34;&gt;Result Summary&lt;/h3&gt;
+&lt;p&gt;In short, I find that dropping the test-requirement is associated with roughly a 2-percentage point increase in both first-time Pell enrollment and underrepresented minority enrollment. These results are significant at the 99.9% confidence interval with standard errors based on 2,500 parametric bootstraps blocked at the institution level.&lt;/p&gt;
+&lt;p&gt;A visualization of this algorithm is displayed below. &lt;strong&gt;The AUC between the treated (solid) and counterfactual (dashed) lines represent the beta estimate of the independent variable of interest (the policy-change)&lt;/strong&gt;. Note that we have less data on the Pell treated and counterfactual averages since this variable did not become available in the IPEDS universe until 2008.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tca.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The visualization above helps tremendously to explain how the Generalized Synthetic Control algorithm works. It uses factor loadings to match “treated” institutions with “control” institutions prior to treatment, so &lt;strong&gt;we can see where the control group would end up had they implemented the policy&lt;/strong&gt;. In my experience as an econometrician, I believe the GSC algorithm creates a far more accurate measure of treatment effects than diff-in-diff or two-way fixed effects could by utilizing these factor weights and matching scores.&lt;/p&gt;
+&lt;p&gt;Further, we can investigate the &lt;strong&gt;average treatment effects&lt;/strong&gt; on the institutions with the test-optional policy by period:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;att.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;These visualizations display the &lt;em&gt;β&lt;/em&gt; coefficients on the Y axis, the time relative to treatment on the X axis, and the 95% confidence interval in the shaded region. While the URM model is a bit noisier than the Pell model, we can still find &lt;strong&gt;significant treatment effects&lt;/strong&gt; in years 3 and 4 after policy implementation.&lt;/p&gt;
+&lt;p&gt;The visualization from the Pell model also tells us that there may be placebo effects apparent. This means that institutions that dropped the test-requirement were seeing a significant increase in Pct. Pell enrollment prior to their treatment (especially in time &lt;em&gt;t&lt;/em&gt; – 2, where the null hypothesis that &lt;em&gt;β&lt;/em&gt; = 0 falls out of the 95% confidence interval). This makes the results spurious, and more challenging to attribute the increase in Pell enrollment to the test-optional policy. We can see that there are no placebo effects apparent in the Pct. Minority model.&lt;/p&gt;
+&lt;h4 id=&#34;bootstrapped-standard-errors-visualization&#34;&gt;Bootstrapped Standard Errors Visualization&lt;/h4&gt;
+&lt;p&gt;The area in the shaded region, the uncertainty estimates (aka the 95% confidence interval), change depending on the number of bootstraps. &lt;strong&gt;Bootstrapping is a data science method of resampling such that we eliminate sampling error in our estimates&lt;/strong&gt;. As we increase the number of bootstraps, the uncertainty estimates begin to stagnate. These are illustrated in the GIFS below.&lt;/p&gt;
+&lt;p&gt;In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Here, we increase the number of bootstraps from 500 to 1000:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;And lastly, just to drive the point home, here&amp;rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.&lt;/p&gt;
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;The generalized synthetic control method is a wonderful supervised-learning approach to produce counterfactual estimates, eliminating much of the confoundedness found in OLS and Fixed-Effects regression techniques. Further, the algorithm allows you to produce beautiful visualizations that aid tremendously in explaining how the algorithm works to a non-technical audience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Isolating the Mechanisms Behind the Test-Optional Admissions Policy</title>
+      <link>https://www.achearn.com/project/to/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/project/to/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The test-optional admissions policy is a growing tactic among four-year postsecondary institutions in the United States. While each institution decides individually whether or not to implement this policy, there has been little research done in evaluating these collective decisions across colleges and universities. By using machine learning algorithms across a range of institutions, I am able to uncover trends across schools that shine a light on why institutions may be heading in this direction. I find that the motives for implementing this policy may be different depending on the selectivity of the school.&lt;/p&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-herefilesresearchtest_optionalpdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://www.achearn.com/files/research/test_optional.pdf&#34;&gt;here&lt;/a&gt;.&lt;/h5&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Everyone Wants to Win: Even the Admissions Officers</title>
+      <link>https://www.achearn.com/project/sensem/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/project/sensem/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Beginning each year around August, prospective college-goers begin filling out their applications to send off to institutions where they may end up for the next four years. The elements that go into this decision include the academic quality of the institution, the campus climate, and for some, the athletic successes the school has achieved in previous years. My research focuses on the last of these elements, as I assessed how collegiate athletics at the highest level impact postsecondary institutional metrics. In doing so, I found significant evidence that football success leads to increased applications, first-year enrollment, and reported SAT scores.&lt;/p&gt;
+&lt;h5 id=&#34;working-paper-can-be-downloaded-herefilesresearchhearn_april_20pdf&#34;&gt;Working paper can be downloaded &lt;a href=&#34;https://www.achearn.com/files/research/Hearn_April_20.pdf&#34;&gt;here&lt;/a&gt;&lt;/h5&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using NCAA Track Data as a Predictor for Race Times</title>
+      <link>https://www.achearn.com/project/tfrrs/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/project/tfrrs/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Prior to the invention of the internet and television, collegiate athletic results were more of a guessing game. Coaches would be in contact with one another via letter mail, a rather antiquated system by today’s standards. According to the Rhodes College Track &amp;amp; Field Head Coach, Robert Shankman, coaches would create “pacts” with one another promising to send their results to each other after every competition. However, with this came various reporting errors such as “sandbagging” in results (i.e. reporting one&amp;rsquo;s time as faster or slower than it actually is), or failure to send results altogether. Furthermore, school records and qualifications for NCAA Championships were dependent upon these marks, yet coaches and athletes may not have submitted these marks with honesty and integrity: a key violation of the NCAA Code of Ethics.&lt;/p&gt;
+&lt;p&gt;It was not until 2010 that the invention of the Track &amp;amp; Field Results Reporting System, more colloquially known as TFRRS, came along. TFRRS (pronounced TEE-furs) is a website mandated by the NCAA to be the hub of all collegiate track &amp;amp; field results and rankings. Each collegiate meet director must submit their results to this website at the conclusion of their event. As a result, this website is a robust database of all things track &amp;amp; field, including every athlete, event, and meet held since 2012.&lt;/p&gt;
+&lt;h2 id=&#34;data-collection-methods&#34;&gt;Data Collection Methods&lt;/h2&gt;
+&lt;p&gt;Co-authors and teammates, Adam Hearn and Will Raines, track &amp;amp; field athletes for Rhodes College, are active users of this website. Whether they are checking their most recent times and rankings or stalking their competition for their next meet, they find themselves on this website multiple times a day. When looking at the centralized nature of the data, Adam realized he could easily mine this data into a format to be read by statistical packages. Once mined, the dataset culminated into one with over 225,000 observations, including every NCAA Division I, II, and III athlete, male and female, who has ever participated in a track event since 2012. The events that we have included in our dataset are the 100 meter dash, 200 meter dash, 400 meter dash, 800 meter run, 1500 meter run, 3000 meter Steeplechase, 5000 meter run, and 10000 meter run.&lt;/p&gt;
+&lt;p&gt;To collect this data, the statistical package Stata was used to convert and clean over 400 .hmtl tables to .csv format, by stripping html tags, merging athletes, and converting time from a string value in HH:MM:SS.mm format to a float value of time in seconds. These methods were chosen specifically to optimize both numeric and qualitative analyses of these results. For each year, after each event was converted into its own comma delimited file, that file would be merged with every other event so that each athlete&amp;rsquo;s times for that season are in its own observation. The pseudocode is presented in Algorithm 1.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;seasons = range(2012, 2019)
+events = (100, 200, 400, 800, 1500, 3000, 5000, 10000)
+genders = (male, female)
+divisions = (1, 2, 3)
+
+i = 0
+x = 0
+foreach season in seasons:
+  foreach event in events:
+    foreach gender in genders:
+      foreach division in division:
+        goto website, copy as txt
+        save as season_event_gender_division.txt
+        strip .html tags
+        convert eventTime (str) to float
+        save as event[i].dta
+        i++
+Merge athlete to athlete
+while x &amp;lt; i:
+  append event[x].dta
+  x++
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After this nested loop was run, each season was appended below the
+previous to culminate into a master dataset of over 225,000
+observations. A sample observation includes: the individual&amp;rsquo;s name,
+their school, their gender, their NCAA division, and their season-best
+times and percentile for each event they ran. There are several missing
+values, as it is unlikely that an individual ran the 100m, 200m, 400m,
+800m, 1500m, 3000m Steeplechase, 5000m, and 10000m meter races all in
+the same year (in fact, there are only three individuals in this entire
+dataset that have done so). Track &amp;amp; field runners often specialize in
+one, two, or three events, so the typical athlete will have several
+missing values in their observation. Additionally, the athletes in this
+dataset are tracked longitudinally. If an athlete competes all four
+years of their eligibility, they will have four observations present in
+this dataset&amp;ndash;one for each year of competition.&lt;/p&gt;
+&lt;h1 id=&#34;inside-the-data&#34;&gt;Inside the Data&lt;/h1&gt;
+&lt;p&gt;Before we take a look at the algorithms and techniques we used to
+analyze the data, we decided it would help to the non-track &amp;amp; field
+trained eye to take a look at summary statistics for each event, by
+breaking up the data between NCAA division and gender: the two nominal
+attributes we hope to uncover trends within. Statistics on average
+times, standard deviation, and participation by division and gender are
+displayed in Table 1.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NCAA Division&lt;/th&gt;
+&lt;th&gt;100m&lt;/th&gt;
+&lt;th&gt;200m&lt;/th&gt;
+&lt;th&gt;400m&lt;/th&gt;
+&lt;th&gt;800m&lt;/th&gt;
+&lt;th&gt;1500m&lt;/th&gt;
+&lt;th&gt;3000m Steeple&lt;/th&gt;
+&lt;th&gt;5000m&lt;/th&gt;
+&lt;th&gt;10000m&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Division I&lt;/td&gt;
+&lt;td&gt;11.33&lt;/td&gt;
+&lt;td&gt;22.39&lt;/td&gt;
+&lt;td&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td&gt;04:09.4&lt;/td&gt;
+&lt;td&gt;9:34.7&lt;/td&gt;
+&lt;td&gt;15:14.41&lt;/td&gt;
+&lt;td&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division II&lt;/td&gt;
+&lt;td&gt;11.45&lt;/td&gt;
+&lt;td&gt;22.39&lt;/td&gt;
+&lt;td&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td&gt;04:09.4&lt;/td&gt;
+&lt;td&gt;9:34.7&lt;/td&gt;
+&lt;td&gt;15:14.41&lt;/td&gt;
+&lt;td&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division III&lt;/td&gt;
+&lt;td&gt;11.79&lt;/td&gt;
+&lt;td&gt;23.92&lt;/td&gt;
+&lt;td&gt;53.44&lt;/td&gt;
+&lt;td&gt;02:05.9&lt;/td&gt;
+&lt;td&gt;04:44.7&lt;/td&gt;
+&lt;td&gt;10:22.7&lt;/td&gt;
+&lt;td&gt;16:21.6&lt;/td&gt;
+&lt;td&gt;34:03.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NCAA Division&lt;/th&gt;
+&lt;th&gt;100m&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;200m&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;400m&lt;/th&gt;
+&lt;th&gt;800m&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;1500m&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;3000m Steeple&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;5000m&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;10000m&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Division I&lt;/td&gt;
+&lt;td&gt;11.33 (0.9)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;22.39&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;04:09.4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;9:34.7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;15:14.41&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division II&lt;/td&gt;
+&lt;td&gt;11.45 (0.6)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;22.39&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;04:09.4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;9:34.7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;15:14.41&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division III&lt;/td&gt;
+&lt;td&gt;11.33&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;22.39&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;50.51&lt;/td&gt;
+&lt;td&gt;1:57.5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;04:09.4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;9:34.7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;15:14.41&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;31.29.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;|                  100m  |  200m  |  400m  |   800m      1500m    3000m Steeple    5000m     10000m |
+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| _______ | ______ | ___________ |
+|     Division I  11.33 |  22.39  | 50.51 |  01:57.5   04:09.4      09:34.7      15.14.41   31:29.5 |
+|        n=44,700  (0.9) |  (1.1)   | (2.7) |   (6.0)    (22.2)       (34.5)        (50.3)    (102.3) |
+|     Division II  11.45  | 23.16  | 52.08 |  02:02.6 |  04:20.2    |  10:07.1  |    15:59.7 |   33:21.7 |
+|        n=24,308  (0.6)  | (1.3) |  (3.0)  |  (8.0)    (22.7)       (46.5)        (61.8)    (135.6) |
+|    Division III  11.79  | 23.92  | 53.44 |  02:05.9 |  04:44.7   |   10:22.7   |   16:21.6   | 34:03.5 |
+|        n=44,735  (0.8)  | (1.5) |  (3.3)  |  (9.2)    (21.4)       (45.6)        (65.9)    (139.3) |&lt;/p&gt;
+&lt;p&gt;Average times by NCAA Division
+Standard deviation in parentheses&lt;/p&gt;
+&lt;p&gt;1&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;              100m    200m     400m      800m      1500m    3000m Steeple    5000m    10000m
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;  Division I  12.51   25.91    59.04    02:22.9   04:51.6      11:29.5      18:10.4   37:22.6
+    n=49,563  (0.8)   (1.6)    (3.8)    (11.3)    (19.6)       (48.5)       (75.3)    (149.9)
+ Division II  13.09   27.13   01:02.3   02:32.2   05:11.3      12:11.3      19:22.1   40:14.6
+    n=23,864  (0.9)   (1.9)    (5.0)    (13.7)    (22.7)       (66.3)       (92.1)    (205.9)
+Division III  13.68   28.45   01:04.4   02:36.0   05:20.5      12:29.3      19:50.7   41:19.2
+    n=38,455  (1.1)   (2.2)    (5.2)    (14.2)    (27.0)       (60.4)       (93.5)    (190.6)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;: Average times by NCAA Division&lt;br&gt;
+Standard deviation in parentheses&lt;/p&gt;
+&lt;h2 id=&#34;differences-in-times-and-variance-by-division&#34;&gt;Differences in Times and Variance by Division&lt;/h2&gt;
+&lt;p&gt;Due to available scholarship money at prominent, nationally-recognized
+Division I schools, programs like the University of Georgia, the
+University of Oregon, and Northern Arizona University attract the top
+high school athletes from around the country. Division II programs,
+including Adams State University and Grand Valley State, also attract
+talented athletes, but their times are typically slower than that of a
+Division I prospect. Division III, the division with the widest variance
+across events, does not offer athletic scholarships but instead offers
+the opportunity to study at top-academically ranked institutions such as
+Massachusetts Institute of Technology, Johns Hopkins University, and
+Williams College while still competing at the NCAA level.&lt;/p&gt;
+&lt;p&gt;The data support the claim that time increases as NCAA division
+increases; that is, Division I as the fastest and Division III as the
+slowest. For the most part, the standard deviation of each event
+increases alongside division as well. As expected, Division I has the
+fastest times and lowest variance across all events. Prospective
+student-athletes hoping to compete at the NCAA level should use Table 1
+to determine what might be a best-fit NCAA division given their current
+athletic ability. While they must take into account time for improvement
+between high school and college, the table presented should be adequate
+as a rough estimate of the competition to expect at each division.&lt;/p&gt;
+&lt;p&gt;It should also be noted that standard deviation is also much higher, on
+average, for females as opposed to males across events. This phenomenon
+is discussed and represented graphically in Section 2.1. This is likely
+correlated with Title IX imperatives and programs accepting women with
+lower athletic standards relative to their male teammates in order to
+meet roster requirements.&lt;/p&gt;
+&lt;h2 id=&#34;participation&#34;&gt;Participation&lt;/h2&gt;
+&lt;p&gt;Consider the differences in participation between male and female
+athletes in Table 1. While both have relatively similar numbers across
+all divisions, there are several more females who compete at the
+Division I level than males. Likewise, there are many more male track
+athletes in Division III than females. Division II numbers are
+relatively constant across both genders.&lt;/p&gt;
+&lt;p&gt;While Title IX imperatives have mandated schools provide equal athletic
+roster spots for men and women, men&amp;rsquo;s track &amp;amp; field is often one of the
+sports &amp;ldquo;cut&amp;quot; to make room for women&amp;rsquo;s scholarships at the Division I
+level. For example, several nationally recognized institutions such as
+Vanderbilt University, Southern Methodist University, University of
+Maryland, and Temple University do not offer men&amp;rsquo;s track &amp;amp; field, but do
+offer women&amp;rsquo;s. Additionally, women&amp;rsquo;s programs often times increase their
+roster sizes larger than their male counterparts to meet Title IX
+standards and make up for the discrepancies in participation numbers
+caused by the large cohort of football athletes.&lt;/p&gt;
+&lt;p&gt;Because of the lower number of roster spots available for males in
+Division I, many prospective male college athletes flock to Division III
+to continue their passion for the sport. Furthermore, male enrollment in
+D-III private schools has been declining in recent years, so
+institutions are expanding opportunities in track &amp;amp; field to enroll more
+males. These phenomenons occurring in collegiate athletics can help
+explain the discrepancies in participation numbers across divisions and
+genders.&lt;/p&gt;
+&lt;h2 id=&#34;differences-in-time-distribution-between-genders&#34;&gt;Differences in Time Distribution between Genders&lt;/h2&gt;
+&lt;p&gt;When loading our data into Weka, the first visualization that pops up is
+a distribution table by each event. When first looking at these
+distributions, it became apparent that there were two distinct bell
+curves: one of which we assumed would be for men, and the other for
+women.&lt;/p&gt;
+&lt;p&gt;We tested this hypothesis by making histograms of the figures by gender.
+When looking at the results, our hypothesis was correct. We also noticed
+that male times are much more &amp;ldquo;centralized&amp;quot; than female times, as the
+males&amp;ndash;depicted in dark blue&amp;ndash;have a skinnier, yet taller bell curve.
+Female times&amp;ndash;depicted in green&amp;ndash;have more variance and are more widely
+distributed. Males and females together are shown in light blue,
+displaying the initial trends we first discovered such as the distinct
+bell curves.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist100.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;rdquo;\linewidth&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist200.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist400.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist800.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist1500.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist3000.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist5000.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;hist10000.jpg&#34; alt=&#34;Density functions of eachevent[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;Notice that some events have more normally distributed times than
+others. For example, the 100m, 3000m Steeplechase, and 10000m races have
+roughly one local maximum (across both genders, as depicted in light
+blue) as opposed to the other events which have two. This could
+correspond to these events being the most &amp;ldquo;extreme&amp;quot; of the track events
+offered as the 100m dash is the shortest event contested and the 10000m
+race is the longest. Furthermore, hurdle heights differ slightly between
+males and females in the 3000 Steeplechase which closes the gap between
+the two genders in competition time. For this reason, the 3000m
+Steeplechase is not a prominent event featured in our analysis.&lt;/p&gt;
+&lt;h1 id=&#34;regression-techniques&#34;&gt;Regression techniques&lt;/h1&gt;
+&lt;h2 id=&#34;using-simple-ols-as-a-predictor&#34;&gt;Using Simple OLS as a Predictor&lt;/h2&gt;
+&lt;p&gt;Due to the highly correlated nature of track &amp;amp; field results, one could
+use this data to make predictions of what time to expect in an event
+based off results from another event. Let&amp;rsquo;s take, for example, the 100
+and 200 meter dash. Typically, the faster an athlete can cover 100
+meters on foot, the faster they can cover 200 meters as well. When
+looking at this relationship graphically in Figure 2.a, the correlation
+is apparent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;100200.jpg&#34; alt=&#34;100m and 200m.&#34;&gt;{width=&amp;rdquo;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;8001500.jpg&#34; alt=&#34;800m and 1500m.&#34;&gt;{width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;5k10k.jpg&#34; alt=&#34;5000m and 10000m.&#34;&gt;{width=&amp;quot;\linewidth&amp;quot;}&lt;/p&gt;
+&lt;p&gt;The same relationship can be inferred between &amp;ldquo;similar&amp;quot; events. For the
+sake of simplicity, we will define three &amp;ldquo;similar&amp;quot; event groups from
+this dataset. We will define the &amp;ldquo;sprints&amp;quot; group as athletes who have
+100m and 200m times; the &amp;ldquo;middle distance&amp;quot; group as 800m and 1500m
+athletes; and the &amp;ldquo;distance&amp;quot; group as 5000m and 10000m runners. In this
+section, we will be looking primarily at the relationships between these
+similar events, represented graphically in Figure 2.&lt;/p&gt;
+&lt;p&gt;A simple OLS regression model was written to predict times within
+&amp;ldquo;similar&amp;quot; event groups. A sample equation to predict 200m times from
+100m times is shown below: $$\begin{aligned}
+\mathrm{time200}&lt;em&gt;{i} = \beta&lt;/em&gt;{0} &amp;amp; + \beta_{1}  \mathrm{time100}_{i} + \upsilon\end{aligned}$$
+When repeating this for middle-distance and distance groups, a
+regression output was produced with the coefficients all highly
+statistically significant at P $&amp;lt;$ 0.001. With the slope coefficients
+and constants provided by the regression, when providing a sample time,
+a predicted time can be estimated (shown in Figure 3).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;100m    $\widehat{200m}$      800m   $\widehat{1500m}$      5000m   $\widehat{10000m}$
+10.00        20.25            1:50        3:51.17           15:00         31:32
+10.50        21.33            1:55        4:00.59           15:15         32:04
+11.00        22.42            2:00        4:10.02           15:30         32:36
+11.50        23.51            2:05        4:19.44           15:45         33:08
+12.00        24.60            2:10        4:28.86           16:00         33:40
+12.50        25.68            2:15        4:38.28           16:15         34:11
+13.00        26.77            2:20        4:47.70           16:30         34:43
+13.50        27.86            2:25        4:57.12           16:45         35:15&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Therefore, when predicting across similar events, it is best to use the
+simple OLS model to estimate the true value. However, this same
+significance of correlation should not be taken for granted across
+&amp;ldquo;dissimilar&amp;quot; events. For example, take a look at Table 2 which shows a
+correlation matrix of each event&amp;rsquo;s correlation with one another. Notice
+the declining nature of the correlation as the events become less
+similar between one another, especially in the 100m. As each event
+distance increases, the correlation coefficient decreases.&lt;/p&gt;
+&lt;p&gt;When regressing each event on 5000m time using simple OLS, the R-squared
+value increases significantly as the event distance increases and
+becomes more aligned with the 5K. 800m time explains 77.9% of variation
+in 5K time, whereas 10K time accounts for nearly 94%. We will discuss
+applications to use multiple-linear regression techniques in Section 3.2
+which can apply to predictions across dissimilar events; for example,
+predicting 400m time based off of 100m time and 200m time.&lt;/p&gt;
+&lt;p&gt;c*7|E| &amp;amp; &amp;amp; &amp;amp; &amp;amp; &amp;amp; &amp;amp; &amp;amp;&lt;br&gt;
+100m &amp;amp; 1 &amp;amp; 0.9504 &amp;amp; 0.8403 &amp;amp; 0.6258 &amp;amp; 0.2018 &amp;amp; 0.0986 &amp;amp; 0.0407&lt;br&gt;
+200m &amp;amp; 0.9504 &amp;amp; 1 &amp;amp; 0.9288 &amp;amp; 0.7075 &amp;amp; 0.4475 &amp;amp; 0.5133 &amp;amp; 0.5583&lt;br&gt;
+400m &amp;amp; 0.8403 &amp;amp; 0.9288 &amp;amp; 1 &amp;amp; 0.8811 &amp;amp; 0.5244 &amp;amp; 0.5949 &amp;amp; 0.2705&lt;br&gt;
+800m &amp;amp; 0.6258 &amp;amp; 0.7075 &amp;amp; 0.8811 &amp;amp; 1 &amp;amp; 0.9372 &amp;amp; 0.8826 &amp;amp; 0.849&lt;br&gt;
+1500m &amp;amp; 0.2018 &amp;amp; 0.4475 &amp;amp; 0.5244 &amp;amp; 0.9372 &amp;amp; 1 &amp;amp; 0.9479 &amp;amp; 0.9365&lt;br&gt;
+5000m &amp;amp; 0.0986 &amp;amp; 0.5133 &amp;amp; 0.5949 &amp;amp; 0.8826 &amp;amp; 0.9479 &amp;amp; 1 &amp;amp; 0.9672&lt;br&gt;
+10000m &amp;amp; 0.0407 &amp;amp; 0.5583 &amp;amp; 0.2705 &amp;amp; 0.849 &amp;amp; 0.9365 &amp;amp; 0.9672 &amp;amp; 1\&lt;/p&gt;
+&lt;h2 id=&#34;multiple-linear-regression-applications-and-biasedness&#34;&gt;Multiple-Linear Regression Applications and Biasedness&lt;/h2&gt;
+&lt;p&gt;As robust as this dataset is, it would be a crime to solely use ordinary
+least squares regression techniques. In fact, using a multiple-linear
+regression model would be ideal for data in this nature. To get the best
+linear unbiased estimate, a user of this data should apply as many
+variables as possible to get the ideal result. It is our hope to publish
+this data to a website in the near future so a user can specify as many
+or as little variables as possible to decrease bias and get the desired
+prediction.&lt;/p&gt;
+&lt;p&gt;Take, for example, an NCAA Division I All-American male. This young man
+has excelled in the 800m this season, and has also run some decent 1500m
+times. However, his coach is debating entering him in the 5000m at their
+conference meet in an attempt to score points for their team. The
+athlete has never run a 5000m race before, but his coach, who happens to
+be an econometrician, hypothesizes he can lock up at least a top-5
+finish. The coach plugs his 800m time into the equation to test this
+hypothesis and predict his 5K time. However, the economist coach is
+shocked at how fast this time is, and knows this is due to the
+dissimilarity between middle-distance and distance as well as the
+dreaded omitted-variable bias and zero-conditional mean violation.&lt;/p&gt;
+&lt;p&gt;The bias in the predicted 5000m is an underestimate due to this omitted
+variable. In other words, the true value of the predicted 5K time is
+slower than the one outputted by the regression. Once controlling for
+1500m time as well, the estimator becomes less biased and the predicted
+5000m comes out more accurate. This increases the R-sqaured value of the
+regression and pushes the estimated value closer to its true value. If
+the coach did not take into account this omitted variable bias, his
+athlete would have been unlikely to score in the 5000m, and would have
+performed worse off in the 800m as well due to fatigue.&lt;/p&gt;
+&lt;p&gt;The more parameters entered in the analysis, the more accurate an
+estimation will become. For example, the Division I All-American male
+mentioned above may have a different trend-line across events than a
+Division III, back-of-the-pack female runner. The relationship produced
+by the regression is linear in nature; however, that relationship
+changes slightly as variables are added or change. Controlling for those
+factors (i.e. NCAA division, gender, and class year) in the regression
+will produce a more accurate, less-biased outcome. A sample equation a
+user could enter is below: $$\begin{aligned}
+\mathrm{time5000}&lt;em&gt;{i} = \beta&lt;/em&gt;{0} &amp;amp; + \beta_{1}  \mathrm{time800}&lt;em&gt;{i} + \beta&lt;/em&gt;{2}  \mathrm{time1500}&lt;em&gt;{i} + \beta&lt;/em&gt;{3}  \mathrm{time10000}&lt;em&gt;{i} + \beta&lt;/em&gt;{4}  \mathrm{male}&lt;em&gt;{i} + \beta&lt;/em&gt;{5}  \mathrm{NCAAdiv}_{i} + \upsilon \end{aligned}$$&lt;/p&gt;
+&lt;p&gt;This equation would provide a much more accurate prediction of 5000m
+time for the athlete than the original simple OLS model earlier
+referenced.&lt;/p&gt;
+&lt;h2 id=&#34;shoulders-of-giants-the-riegel-model&#34;&gt;Shoulders of Giants: The Riegel Model&lt;/h2&gt;
+&lt;p&gt;The first person to develop an analysis on the prediction of race times
+for runners and other athletes was the American research engineer, Peter
+Riegel. While Riegel primarily focused his research on bioengineering,
+deep sea diving equipment, and air flow in coal mines, he also provided
+measurement techniques for USA Track &amp;amp; Field (USATF). Riegel
+additionally designed and measured marathon courses for multiple
+Olympics and Olympic Trials. In addition to his measurement research,
+Riegel proposed a formula to predict race times for one distance based
+off another: $$\begin{aligned}
+\mathrm{Time}&lt;em&gt;{2} = \mathrm{Time}&lt;/em&gt;{1} \times (\mathrm{Distance}&lt;em&gt;{1} \div \mathrm{Distance}&lt;/em&gt;{2})^{1.06}\end{aligned}$$
+This rather elementary equation, first published in a 1977 article of
+&lt;em&gt;Runner&amp;rsquo;s World&lt;/em&gt;, has been used by many to predict race times based off
+another. It has been criticized by many due to predicting seemingly
+unobtainable times.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As simple as this equation is, it does not account for the
+aforementioned omitted variable bias and zero conditional mean violation
+that come along with only including one &amp;ldquo;event&amp;quot; variable. To provide
+the best linear unbiased estimator of race times, more than just one
+event should be entered in the equation. Therefore, it is our belief
+that the multiple-linear regression model provided with our data should
+provide the more accurate analysis on the prediction of times,
+especially for collegiate athletes. We believe that the multiple-linear
+regression model provided with our data should provide the more accurate
+analysis on the prediction of times. We hope to analyze this claim in
+the future.&lt;/p&gt;
+&lt;h1 id=&#34;classification-analysis&#34;&gt;Classification Analysis&lt;/h1&gt;
+&lt;p&gt;Often times in track meets, schools from all NCAA divisions compete
+against one another head-to-head. As distance runners for Rhodes, we
+have often toed the line against top NCAA D-I programs such as Duke,
+Michigan State, Kentucky, and Colorado. In these races, it gives
+ourselves a chance to see how we stack up against runners from more
+historically successful programs. We often find ourselves,
+nationally-competitive NCAA Division III runners, beating some of these
+athletes, even though they are given the clout of athletic scholarships
+and many more resources thrown into their track program that come along
+with attending a Division I institution.&lt;/p&gt;
+&lt;p&gt;This begs the question, does NCAA division make as big of a difference
+in performance as it is made out to be? Additionally, due to the
+homogenous nature of track &amp;amp; field events, one could assert that the top
+NCAA Division I female runner would most likely be the best athlete on a
+mid-tier Division III men&amp;rsquo;s team. Is there a robust difference across
+genders as well? To examine this question, we will be using
+classification algorithms to assert if these dichotomies across NCAA
+divisions and genders are as prominent as they are traditionally
+believed to be.&lt;/p&gt;
+&lt;h2 id=&#34;classification-between-gender&#34;&gt;Classification between Gender&lt;/h2&gt;
+&lt;p&gt;Often times in track meets, heats of the 10000m will be combined with
+men and women in the same race. While the results are still separated by
+gender, the desegregation of sexes in this event is done to save time
+(after all, two heats of 10000 meter races could take up to 90 minutes
+to complete). While men are typically faster across the various
+distances in track &amp;amp; field, this gives a chance for the top women
+athletes to chase after and beat the bottom-of-the-pack males in the
+same race. To examine this phenomenon, we will be using a Naı̈ve Bayes
+classification algorithm to classify NCAA athletes by gender. The
+algorithm correctly classifies 199,231 of the 225,335 athletes, and
+produces an accuracy rate of 88.4%.&lt;/p&gt;
+&lt;p&gt;The sole attribute that shows the differentiation between males and
+females in this dataset is time, as males are traditionally faster than
+females on average. Due to the fact that this classification model was
+built solely on time variables, some of the slower males (10,891
+athletes) were assigned as female while the faster females (15,233
+athletes) were classified as male. The result, displayed in the
+confusion matrix in Table 3, suggests that nearly 12% of all NCAA track
+&amp;amp; field athletes would be a good fit athletically on a team of the
+opposite gender, regardless of division. This result, while still
+significant at 88.4%, suggests that there is still a divide between
+genders athletically at the NCAA level. However, the fastest females are
+still competitive with the slowest males.&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;                    Male     Female
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;*Actual    Male    102,582   10,891
+Female   15,233    96,649&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;: Confusion Matrix between Genders[]{label=&amp;ldquo;fig:relationship&amp;rdquo;}&lt;/p&gt;
+&lt;h2 id=&#34;classifying-ncaa-divisions&#34;&gt;Classifying NCAA Divisions&lt;/h2&gt;
+&lt;p&gt;Society portrays NCAA Division I being head and shoulders above Division
+II and Division III. After all, Division I is where the athletes are
+given top resources and scholarships with the promise of a professional
+career. Division II offers some scholarships, but professional careers
+are less common. Lastly, there&amp;rsquo;s Division III, where athletes are given
+the opportunity to pursue their sport without athletic scholarships.
+When looking solely at the athletic data within track &amp;amp; field times, the
+divide between NCAA divisions is not as dichotomous as many athletes and
+fans portray it to be.&lt;/p&gt;
+&lt;p&gt;The Naı̈ve Bayes classification algorithm was originally run to classify
+athletes, both male and female, into NCAA divisions based off of their
+performances in various events. The results in our original model were
+fascinating, as the algorithm only correctly classified 49.52% of all
+NCAA track &amp;amp; field athletes into the correct division. However, with
+these results, only two observations were placed into Division II. With
+that discrepancy, we decided to break it down even further by
+classifying athletes into NCAA division by gender. The algorithm
+performed marginally better with the results in the confusion matrices
+in Table 4.&lt;/p&gt;
+&lt;p&gt;0.5&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;         D-I    34,552   188   9,960
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actual   D-II    13,082   94    10,862
+D-III   16,170   140   28,425&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;: NCAA Division Classification Confusion Matrix by Gender&lt;/p&gt;
+&lt;p&gt;0.5&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;         D-I    41,755   168   7,640
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actual   D-II    13,469   197   10,198
+D-III   14,041   312   24,102&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;: NCAA Division Classification Confusion Matrix by Gender&lt;/p&gt;
+&lt;p&gt;The algorithm performed slightly better for females than males,
+suggesting that the divide between NCAA divisions are greater for women
+and that times differ more across division. The algorithm correctly
+classified 59.03% of women as opposed to only 55.58% of men.&lt;/p&gt;
+&lt;p&gt;Despite the adjustments made to break up the NCAA division
+classification by gender, the algorithm still performed poorly when
+classifying Division II athletes. While Division I athletes typically
+lead all divisions in time, and Division III runners are typically
+slower and bring up the rear, Division II athletes find themselves
+toward the middle. This dilemma makes it harder to classify Division II
+athletes especially considering the division&amp;rsquo;s large variation in times.
+This phenomenon is displayed in Figure 4, which shows all-division
+percentile on the y-axis and the athlete&amp;rsquo;s time on the x-axis for males
+(left) and females (right). The data points are broken up by NCAA
+division with navy blue representing D-I, cranberry D-II, and mint green
+D-III. The graph was created for the 5000m run, but the trends are
+similar across all events.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;5000perc.jpg&#34; alt=&#34;Male and Female 5000m time by All-DivisionPercentile[]{label=&amp;amp;ldquo;fig:relationship&amp;amp;rdquo;}&#34;&gt;{#fig:relationship
+width=&amp;ldquo;15cm&amp;rdquo;}&lt;/p&gt;
+&lt;h1 id=&#34;association-mining-what-determines-your-events&#34;&gt;Association Mining: What determines your events?&lt;/h1&gt;
+&lt;p&gt;Given that each athlete (or observation) either has a time in an event
+or no time in that event, we decided to manipulate the data to mine
+association rules on what determines the event athletes run. To do this,
+we modified the numerical value for each &amp;ldquo;time&amp;quot; variable to a binary
+value of 1 if the athlete had a value for that time, or 0 if they did
+not. Therefore, think of the new variables representing &amp;ldquo;ran100&amp;quot; rather
+than &amp;ldquo;time100&amp;quot;.&lt;/p&gt;
+&lt;p&gt;The Apriori algorithm we performed produced a large information gain on
+these association rules. However, due to our athletic intuition and
+prior knowledge, these results did not reveal much. For example, it is
+common knowledge that a 100m sprinter is unlikely to run the 10000m at
+any point during their athletic career. Because we knew the algorithm
+including all events involved extraneousness, we decided to cut down the
+analysis to the aforementioned &amp;ldquo;similar events.&amp;quot; However, this time,
+the similar events will be generalized as the sprints (100m, 200m, and
+400m) and distance (800m, 1500m, 5000m 10000m).&lt;/p&gt;
+&lt;p&gt;A new dataset was created with just athletes who have run the 100m,
+200m, and/or 400m races to create the following association rules. For
+the sprints group, the best associations we found were the following:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran100&lt;/em&gt; = 0 $\wedge$ &lt;em&gt;ran200&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran400&lt;/em&gt; = 1
+(Confidence = 1, Lift = 1.94)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran100&lt;/em&gt; = 0 $\wedge$ &lt;em&gt;ran400&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran200&lt;/em&gt; = 1
+(Confidence = 1, Lift = 1.52)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran200&lt;/em&gt; = 0 $\wedge$ &lt;em&gt;ran400&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran100&lt;/em&gt; = 1
+(Confidence = 1, Lift = 1.93)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran200&lt;/em&gt; = 0 $\wedge$ &lt;em&gt;ran400&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran100&lt;/em&gt; = 1
+(Confidence = 0.82, Lift = 1.72)&lt;/p&gt;
+&lt;p&gt;The same pruning was repeated for the distance runners, as we created a
+dataset with only those who have run a 800m, 1500m, 5000m or 10000m race
+to provide the following association rules:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran800&lt;/em&gt; = 1 $\wedge$ &lt;em&gt;ran5000&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran10000&lt;/em&gt; = 0
+(Confidence = 1, Lift = 1.19)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran5000&lt;/em&gt; = 0 $\rightarrow$ &lt;em&gt;ran10000&lt;/em&gt; = 0 (Confidence = 0.98, Lift =
+1.17)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran800&lt;/em&gt; = 1 $\rightarrow$ &lt;em&gt;ran10000&lt;/em&gt; = 0 (Confidence = 0.95, Lift =
+1.14)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ran1500&lt;/em&gt; = 1 $\rightarrow$ &lt;em&gt;ran10000&lt;/em&gt; = 0 (Confidence = 0.85, Lift =
+1.01)&lt;/p&gt;
+&lt;p&gt;Splitting up the association by sprint and distance groups allowed us to
+gain some more information on a runner&amp;rsquo;s likelihood to run an event
+based off what they have run in the past. For example, running the 800m
+race implies that you will not run a 10000m race, but running a 10000m
+race does not necessarily imply sitting out in the 800m; Raines (a
+400m/800m runner) and Hearn (a 10000m &lt;em&gt;and&lt;/em&gt; 800m runner) are examples of
+this association. This data can also be replicated in a J48 decision
+tree.&lt;/p&gt;
+&lt;h1 id=&#34;conclusions-and-future-work&#34;&gt;Conclusions and Future Work&lt;/h1&gt;
+&lt;p&gt;While we are all pleased with many of the trends and predictions to come
+out of this data, there are many more analyses to be had based on how
+robust the dataset is. As mentioned earlier in the paper, it is Adam&amp;rsquo;s
+hope that he can publish this data as a resource for coaches and
+athletes alike to use OLS and multiple-linear regression techniques to
+use their current times to predict estimated times in a separate event
+and adding parameters (NCAA division, gender, class year, etc.) as
+necessary.&lt;/p&gt;
+&lt;p&gt;We would like to analyze the accuracy of our multi-linear regression
+model compared to the similar Riegel Model. If proven more accurate, it
+is our hope that this data will be used as the go-to resource for all
+athletes to use to predict race times. Additionally, we could use
+boosting to create a hybrid of the two estimations which could
+potentially result in an even more accurate model.&lt;/p&gt;
+&lt;p&gt;In the spring of 2019, Hearn plans to continue this research by merging
+in budget statistics for track and field programs using the Equity in
+Athletics Data Analysis database. With this data, he will be able to
+determine the ideal funding for each program to minimize cost and
+maximize athletic performance in track &amp;amp; field.&lt;/p&gt;
+&lt;p&gt;The dataset also continues to grow at the conclusion of each season.
+With each new spring track season comes roughly 35,000 more observations
+adding on to the data that has already been collected, resulting in an
+even more accurate model. Also, the dataset currently only includes
+outdoor track times. In the future, new mining methods may be
+implemented to include indoor track indoor times as well. With this
+data, an indoor/outdoor conversion coefficient for each event can be
+created as a resource for coaches and athletes. Furthermore, since the
+data are longitudinal in nature, we would like to modify the data to
+track athletes individually to determine improvement across their
+collegiate career, and examine if this differs by NCAA division and
+gender.&lt;/p&gt;
+&lt;p&gt;As the possibilities of analysis with this dataset are endless, it is
+our hope that we can continue our research on this topic in the future.
+Whether we present on this research at URCAS, or simply provide the
+public with a website of prediction models, we hope that coaches and
+athletes can use this data as a means to achieve their respective goals.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&amp;ldquo;Marathon Predictions 3.0.&amp;rdquo; &lt;em&gt;FetchEveryone.com&lt;/em&gt;,
+&lt;a href=&#34;https://www.fetcheveryone.com/marathonprediction&#34;&gt;www.fetcheveryone.com/marathonprediction&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://www.achearn.com/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.achearn.com/slides/example/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;porridge &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; porridge &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{% speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Press &lt;span style=&#34;color:#e6db74&#34;&gt;`S`&lt;/span&gt; key to view
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{% /speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;slide&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;background-image&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/img/boards.jpg&amp;#34;&lt;/span&gt; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;slide&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;slide&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;reveal&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;reveal&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;reveal&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;h3&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;navy&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
