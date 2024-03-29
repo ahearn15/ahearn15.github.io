@@ -2,38 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Adam Hearn</title>
-    <link>/authors/</link>
-      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.achearn.com/authors/</link>
+      <atom:link href="https://www.achearn.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.achearn.com/img/icon-192.png</url>
       <title>Authors</title>
-      <link>/authors/</link>
+      <link>https://www.achearn.com/authors/</link>
     </image>
-    
-    <item>
-      <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;I am a current Data Scientist Associate at the American Institutes for Research. I hold an. M.S. in Data Science for Public Policy from Georgetown University and a BA in Economics from Rhodes College. I am skilled in computational social science research, machine learning, causal inference, data visualization, and higher-ed data governance and analytics in enrollment management and institutional research.&lt;/p&gt;
-
-&lt;p&gt;Experienced in the postsecondary sector through appointments at SHEEO, AIR, College Transitions. Addititionally, I previously served as Director of Data Analytics and Institutional Research at Franklin College in Indiana.&lt;/p&gt;
-
-&lt;p&gt;My mission is to leverage my data science and technical background for the public good, and increase postsecondary attainment as a result.&lt;/p&gt;
-
-&lt;p&gt;CV can be downloaded &lt;a href=&#34;/files/hearn_resume.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Robert Ford</title>
-      <link>/authors/robert-ford/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/authors/robert-ford/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

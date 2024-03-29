@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sports | Adam Hearn</title>
+    <link>https://www.achearn.com/sports/</link>
+      <atom:link href="https://www.achearn.com/sports/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sports</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Mar 2024 14:35:33 +0000</lastBuildDate>
+    <image>
+      <url>https://www.achearn.com/img/icon-192.png</url>
+      <title>Sports</title>
+      <link>https://www.achearn.com/sports/</link>
+    </image>
+    
+    <item>
+      <title>MLB Picks</title>
+      <link>https://www.achearn.com/sports/mlb/</link>
+      <pubDate>Thu, 28 Mar 2024 14:35:33 +0000</pubDate>
+      <guid>https://www.achearn.com/sports/mlb/</guid>
+      <description>&lt;h2 id=&#34;mlb-model&#34;&gt;MLB Model&lt;/h2&gt;
+&lt;p&gt;This site provided MLB predictions based on player-level data that incorporates batters, pitchers, starting lineups, travel, ballpark factors, weather, and more. An XGBoost algorithm was conducted to train the model on 2023 data (over 2000 games) with hyperparameters tuned to maximize ROI. Among these hyperparameters is bet strategy. To maximize ROI, the model suggests not betting on teams with odds lower than -200 or higher than +200, and to only bet on picks with above a 6% EV.&lt;/p&gt;
+&lt;p&gt;Backtesting for the 2023 season yielded a 10.58% ROI. An official technical paper on the methodology is coming soon.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBA Picks</title>
+      <link>https://www.achearn.com/sports/nba/</link>
+      <pubDate>Fri, 09 Dec 2022 14:35:33 +0000</pubDate>
+      <guid>https://www.achearn.com/sports/nba/</guid>
+      <description>&lt;h2 id=&#34;nba-model&#34;&gt;NBA Model&lt;/h2&gt;
+&lt;p&gt;NBA model coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

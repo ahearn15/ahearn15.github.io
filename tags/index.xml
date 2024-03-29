@@ -2,39 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Adam Hearn</title>
-    <link>/tags/</link>
-      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.achearn.com/tags/</link>
+      <atom:link href="https://www.achearn.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Mar 2024 14:35:33 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.achearn.com/img/icon-192.png</url>
       <title>Tags</title>
-      <link>/tags/</link>
+      <link>https://www.achearn.com/tags/</link>
     </image>
-    
-    <item>
-      <title>Academic</title>
-      <link>/tags/academic/</link>
-      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Running</title>
-      <link>/tags/running/</link>
-      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/running/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/source-themes/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
