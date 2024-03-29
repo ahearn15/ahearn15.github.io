@@ -19,7 +19,7 @@
       <guid>https://www.achearn.com/sports/mlb/</guid>
       <description>&lt;p&gt;This site provides MLB predictions based on player-level data that incorporates batters, pitchers, starting lineups, travel, ballpark factors, weather, and more. An XGBoost algorithm was conducted to train the model on 2023 data (4,860 games and 2,140 features) with hyperparameters tuned to maximize ROI. Among these hyperparameters is bet strategy. To maximize ROI, the model suggests not betting on teams with odds lower than -200 or higher than +200, and to only bet on picks with above a 6% EV.&lt;/p&gt;
 &lt;p&gt;Backtesting for the 2023 season using 10-fold cross validation yielded a 10.58% ROI. An official technical post on the training methodology is coming soon.&lt;/p&gt;
-&lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vQcWo1V381Gsrz2cDoVVOriYtJ_jKZ57nd0BoL-vVNXS4YVLqqoxAFXO0jyYkXWU27YDvdgSEAI5Dz7/pubhtml?widget=true&amp;amp;headers=false&#34; width = &#34;720&#34; height=&#34;465&#34; style=&#34;border:0;&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vQcWo1V381Gsrz2cDoVVOriYtJ_jKZ57nd0BoL-vVNXS4YVLqqoxAFXO0jyYkXWU27YDvdgSEAI5Dz7/pubhtml?widget=true&amp;amp;headers=false&#34; width = &#34;100%&#34; height=&#34;465&#34; style=&#34;border:0;&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
