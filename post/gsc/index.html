@@ -650,15 +650,15 @@
 <thead>
 <tr>
 <th></th>
-<th>Pct. full-time first-time <!-- raw HTML omitted -->students Pell</th>
-<th>Pct. degree-seeking first-time <!-- raw HTML omitted -->students minority</th>
+<th>Pct. full-time first-time <br />students Pell</th>
+<th>Pct. degree-seeking first-time <br />students minority</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Test-optional</td>
-<td>2.166***  <!-- raw HTML omitted -->(0.488)</td>
-<td>2.287***  <!-- raw HTML omitted -->(0.728)</td>
+<td>2.166***  <br />(0.488)</td>
+<td>2.287***  <br />(0.728)</td>
 </tr>
 <tr>
 <td>Controls</td>
@@ -705,11 +705,11 @@
 <h4 id="bootstrapped-standard-errors-visualization">Bootstrapped Standard Errors Visualization</h4>
 <p>The area in the shaded region, the uncertainty estimates (aka the 95% confidence interval), change depending on the number of bootstraps. <strong>Bootstrapping is a data science method of resampling such that we eliminate sampling error in our estimates</strong>. As we increase the number of bootstraps, the uncertainty estimates begin to stagnate. These are illustrated in the GIFS below.</p>
 <p>In this first GIF, we see the uncertainty estimates as we increase the number of bootstraps from 5 to 500:</p>
-<!-- raw HTML omitted -->
+<img src="five_hundred.gif" style="zoom:125%;" />
 <p>Here, we increase the number of bootstraps from 500 to 1000:</p>
-<!-- raw HTML omitted -->
+<img src="one_thousand.gif" style="zoom:125%;" />
 <p>And lastly, just to drive the point home, here&rsquo;s what our uncertainty estimates look like when we increase the bootstraps from 2,000 to 2,500 (the number I used in my main regression model):</p>
-<!-- raw HTML omitted -->
+<img src="two_thousand.gif" style="zoom:125%;" />
 <p>These GIFS illustrate the bootstrap resampling method, displaying the method in a way that clearly defines how the algorithm works under the hood.</p>
 <h2 id="conclusions">Conclusions</h2>
 <p>The generalized synthetic control method is a wonderful supervised-learning approach to produce counterfactual estimates, eliminating much of the confoundedness found in OLS and Fixed-Effects regression techniques. Further, the algorithm allows you to produce beautiful visualizations that aid tremendously in explaining how the algorithm works to a non-technical audience.</p>
